@@ -2,6 +2,8 @@
 
 ## About the Simple Design System
 
+[Overview Deck](https://docs.google.com/presentation/d/1-bgrLATp5YSx1K8B7RS83IVMeEWg16Fd99Inr3_xLQk/edit?usp=sharing)
+
 https://scidsg.github.io/design-system/
 
 This design system provides a research-based framework for quickly building durable web experiences.
