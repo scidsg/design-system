@@ -1,0 +1,911 @@
+<!doctype html>
+
+<!-- Hey there! Thanks for taking a closer look at the code 😎
+This project is a work IN-PROGRESS! If you'd like to help make
+it better  - i.e. more accessible, align closer with
+W3C/WHATWG Standards, etc - please consider contributing 🙏 -->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Glenn Sorrentino">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta http-equiv="onion-location" content="http://egonv4vxnya3qlycvsaxfr2vostxmwrq6omjzukzik6vvbicie6pdwyd.onion/" /> -->
+	<!-- Use the meta tag for your onion address if your hosting provider restricts changing your server's content security headers. -->
+	<meta name="description" content="The World's First Anarchist Manifesto by Anselme Bellegarrigue, published 23 March 1813.">
+	<!-- Keep the description to around 20 words or 150 characters so it displays fully on Google search results. -->
+
+	<title>Article Template - Simple Design System</title>
+
+	<link rel="icon" type="image/x-icon" href="design-system/images/favicon/favicon.ico">
+	<link rel="stylesheet" href="design-system/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="design-system/js/jquery-min.js"></script>
+	<script src="design-system/js/design-system.js"></script>
+</head>
+
+<body class="articleBody">
+	<a href="#content" class="skiplink btn btnLrg primaryBtn">Skip to content</a>
+	<div class="banner">
+		<p>❤️ Is this resource helpful? <a href="https://patreon.com/glennsorrentino" target="_blank" rel="noopener noreferrer">Support me on Patreon</a>!</p>
+		<button class="bannerBtn" aria-label="Close banner" aria-expanded="true"></button>
+	</div>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<div class="logoMark"></div>
+				<h1><a href="#">Simple Design System</a></h1>
+			</div>
+			<nav>
+				<button class="mobileNav btnIcon" aria-label="Expand mobile navigation" aria-expanded="false"></button>
+				<ul>
+					<li><a class="wrapper" href="https://github.com/glenn-sorrentino/design-system/blob/main/design-system/components/header/html/header.html" target="_blank" rel="noopener noreferrer">View Code</a></li>
+					<li><a class="wrapper" href="secondary.html">Secondary Page</a></li>
+					<li><a class="wrapper" href="article.html">Article</a></li>
+					<li><a class="btn btnLrg" href="signin.html">Sign In</a></li>
+				</ul>
+				<a class="btn btnLrg primaryBtn" href="https://github.com/glenn-sorrentino/design-system" target="_blank" rel="noopener noreferrer">Contribute</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="content">
+
+		<section class="intro secondaryIntro articleIntro">
+			<div class="wrapper">
+				<p class="meta category"><a href="#">Category</a></p>
+				<h2>Concise, Keyword-Leading Heading</h2>
+				<p class="meta"><a href="https://en.wikipedia.org/wiki/George_Costanza" rel="noopener noreferrer nofollow" target="_blank">Art Vandelay</a>, 23 March 2022</p>
+			</div>
+			<div class="tabs wrapper">
+				<nav>
+					<ul>
+						<li><a href="#References">References</a></li>
+						<li><a href="#publisher">Publisher Information</a></li>
+						<li><a href="#About">About the Author</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+
+		<article>
+			<div class="wrapper withToc">
+				<div class="asideContainer">
+					<div class="aside withBtn">
+						<h3>Highlights</h3>
+						<div class="asideContent">
+							<div class="col">
+								<dl>
+									<dt class="label">Last Edited</dt>
+									<dd><time datetime="2023-01-01">1 January 2023</time></dd>
+									<dt class="label">First Published</dt>
+									<dd><time datetime="2020-04-20">20 April 2020</time></dd>
+								</dl>
+							</div>
+							<div class="col">
+								<dl>
+									<dt class="label">Author</dt>
+									<dd><a href="#">Art Vandelay</a></dd>
+									</li>
+									<dt class="label">Publisher</dt>
+									<dd><a href="#" rel="noopener noreferrer nofollow" target="_blank">Vandelay Open Publishing</a> <span title="External Link" aria-label="External Link" class="fieldIcon">↗️</span></dd>
+									</li>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="aside toc withBtn">
+						<h3>Contents</h3>
+						<ol class="hidden">
+							<li><a href="#order">Anarchy Is Order</a></li>
+							<li><a href="#collective">Traditional Collective Interest a Fiction</a></li>
+							<li><a href="#dogma">Individualist Dogma the Only Fraternal Dogma</a></li>
+							<li><a href="#social">The Social Contract a Monstrosity</a></li>
+							<li><a href="#attitude">Of the Attitude of the Parties and their Newspapers</a></li>
+							<li><a href="#enemy">Power the Enemy</a></li>
+							<li><a href="#time">The People Merely Wasting its Time and Prolonging its Suffering by Espousing the Struggles of Governments and Parties</a></li>
+							<li><a href="#expect">The People Need Expect Nothing from Any Party</a></li>
+							<li><a href="#sufferage">On Electorate or Universal Suffrage</a></li>
+							<li><a href="#elections">In These Times Elections Are Not and Cannot Be Anything But a Fraud and a Robbery</a></li>
+							<li><a href="#birthright">Birthright and the French People’s Mess of Pottage</a></li>
+							<li><a href="#gov">What Conjures Governments into Existence is Not What Keeps Them Alive</a></li>
+							<li><a href="#politics">To Unmask Politics is to Destroy It</a></li>
+							<li><a href="#conclusion">Conclusion</a></li>
+						</ol>
+						<button class="btn tertiaryBtn hidden btnCollapse">Collapse</a>
+						<button class="btn tertiaryBtn btnExpand">Expand</a>
+					</div>
+				</div>
+
+				<div>
+					<h3 id="order">Article Heading</h3>
+					<p><a href="simple-article.html">See an example of a simple article</a>. If I were to heed the meaning vulgarly attributed to certain words then, since vulgar error has taken “anarchy” to be synonymous with “civil war”, I should be horrified by the title with which I have headed this publication, in that I
+						have a horror of civil strife.</p>
+
+					<p>At the same time I account it a pleasure and an honour that I have never been party to a band of conspirators nor any revolutionary battalion; a pleasure and an honour because it furnishes the basis upon which I can establish, for one
+						thing, that I have been enough of an honest man not to pull the wool over the people’s eyes, and, for another, that I have been astute enough not to let the wool be pulled over my own eyes by the ambitious. I have watched — I cannot claim
+						unmoved but at any rate with the utmost serenity — the passage of fanatics and charlatans, moved to pity for some and to utter contempt for the rest. And when, in the wake of these bloody struggles — having forced my enthusiasm not to
+						overstep the narrow confines of syllogism — I have sought to draw up a balance-sheet of the benefits that each corpse has bought, the sum has added up to zero, and zero means nothing. That nothing horrifies me; civil war horrifies me
+						also.</p>
+
+					<table>
+						<caption>The Tracker Tracker, iOS</caption>
+						<thead>
+							<tr>
+								<th scope="col">Category</th>
+								<th scope="col">Popular App</th>
+								<th scope="col">Trackers</th>
+								<th scope="col">Open-Source App</th>
+								<th scope="col">Trackers</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="row1">
+								<th>Call/Text</th>
+								<td>WhatsApp</td>
+								<td>12</td>
+								<td>✅&nbsp;Signal</td>
+								<td>1</td>
+							</tr>
+							<tr id="row2">
+								<th>Email</th>
+								<td>Gmail</td>
+								<td>11</td>
+								<td>✅&nbsp;Proton</td>
+								<td>1</td>
+							</tr>
+							<tr id="row3">
+								<th>Browser</th>
+								<td>Chrome</td>
+								<td>11</td>
+								<td>✅&nbsp;Brave</td>
+								<td>2</td>
+							</tr>
+						<tbody>
+					</table>
+
+					<p>Consequently, if I have inscribed ANARCHY on the mast-head of this newspaper, it cannot have been because I take that word in the sense attributed to it — much mistakenly, as I shall be explaining anon — by the governmentalist factions,
+						but rather to ensure that it receives the etymological rights it deserves in a democracy. Anarchy is the negation of governments. Governments, whose pupils we are, have naturally found nothing better to devise than to school us in fear
+						and horror of their destruction. But as governments in turn are the negations of individuals or of the people, it is reasonable that the latter, waking up to essential truths, should gradually come to feel a greater horror at its own
+						annihilation than that of its masters.</p>
+
+					<p>Anarchy is an ancient word, but, for us that word articulates a modem notion, or rather, a modern interest, the idea being daughter to the interest. History has described as “anarchic” the condition of a people wherein there are several
+						governments in contention one with another, but the condition of a people desirous of being governed but bereft of government precisely because it has too many is one thing and the condition of a people desirous of governing itself and
+						bereft of government precisely because it wishes none quite another. In ancient times, indeed, anarchy was civil war, not because it meant absence of governments but, rather, because it meant a multiplicity of them and competition and
+						strife among the governing classes. The modern notion of absolute social truth or pure democracy has ushered in an entire series of discoveries or interests which have turned the terms of the traditional equation upside down. Thus
+						anarchy, which, when contrasted with the term monarchy, means civil war, is, from the vantage point of absolute or democratic truth, nothing less than the true expression of social order.</p>
+
+					<p>Indeed:</p>
+
+					<p>Who says anarchy, says negation of government;<br>
+						Who says negation of government says affirmation of the people;<br>
+						Who says affirmation of the people, says individual liberty;<br>
+						Who says individual liberty, says sovereignty of each;<br>
+						Who says sovereignty of each, says equality;<br>
+						Who says equality, says solidarity or fraternity;<br>
+						Who says fraternity, says social order;</p>
+
+					<p>By contrast:</p>
+
+					<p>Who says government, says negation of the people;<br>
+						Who says negation of the people, says affirmation of political authority;<br>
+						Who says affirmation of political authority, says individual dependency;<br>
+						Who says individual dependency, says class supremacy;<br>
+						Who says class supremacy, says inequality;<br>
+						Who says inequality, says antagonism;<br>
+						Who says antagonism, says civil war,<br>
+						From which it follows that who says government, says civil war.</p>
+
+					<p>Whether what I have just stated is new, eccentric or frightful, I cannot tell. I do not know, nor do I care to know. What I do know is that I can boldly argue my case against all of the White and Red governmentalist prose of past,
+						present and future. The truth is that, on this terrain — the terrain of the free man untainted by ambition, diligent in his work, contemptuous of command and refractory to submissiveness — I throw down the gauntlet to functionarism’s
+						every argument, all of the rationale of marginalisation and all the champions of taxation — be it monarchist or republican — and regardless of whether it go by the name of progressive, proportional, territorial, capitalist and whether it
+						be on property or on consumption.</p>
+
+					<p>Yes, anarchy is order, whereas government is civil war.</p>
+
+					<p>When my intellect looks past the wretched details underpinning the day to day dialectic, I discover that the intestinal strifes which, throughout the ages, have decimated humankind, are bound up with a single cause, to wit: the
+						destruction or preservation of government.</p>
+
+					<p>In the realm of politics, sacrifice of self for the purpose of the maintenance or installation of a government has always meant having one’s throat cut and one’s entrails torn out. Point me to a place where men openly slaughter one
+						another and I will show you a government behind all the carnage. If you try to explain civil war away as other than the manner of a government’s trying to ensconce itself or agovernment’s refusal to quit the stage, you are wasting your
+						time; you will not be able to come up with anything.</p>
+
+					<p>And the reason is simple.</p>
+
+					<p>A government is set up. In the very instant of its creation, it has its servants and, as a result, its supporters; and the moment that it has its supporters it has its adversaries too. That very fact alone quickens the seed of civil war,
+						because the government, resplendent in its authority, cannot possibly act with regard to its adversaries the way it does with regard to its supporters. There is no possibility of the former’s not feeling its favour, nor of the latter’s
+						not being persecuted. From which it follows that there is likewise no possibility of conflict between the favoured faction and the oppressed faction not arising from this disparity, sooner or later. In other words, once the government is
+						in place, the favouritism that is the basis of privilege and which provokes division, spawns antagonism and civil strife becomes inevitable.</p>
+
+					<p>From which it follows that government is civil war.</p>
+
+					<p>There need only be a government supporter on the one hand and an adversary of the government on the other for strife to erupt among the citizenry: it is plain that, outside of the love or hatred borne towards the government, civil war
+						has no raison d’etre, which means to say that for peace to be established, the citizenry need merely refrain from being, on the one hand, supporters and, on the other, adversaries of the government.</p>
+
+					<p>But refraining from attacking or defending the government so as to render civil war impossible is nothing short of paying it no heed, tossing it on to the dung heap and dispensing with it in order to lay the foundations of social order.
+					</p>
+
+					<p>Now, if dispensing with government is, on the one hand, the establishment of order, and, on the other, the enshrinement of anarchy, then order and anarchy go hand in hand.</p>
+
+					<p>From which it follows that anarchy is order.</p>
+
+					<p>Before I proceed any further, I would ask the reader to beware of the bad impression that may be made by the personal format which I have adopted for the purpose of facilitating argument and refining thought. In this exposition, I
+						represent, not so much the author, as the reader and listener: I stand for man.</p>
+
+					<h3 id="collective">Traditional Collective Interest a Fiction</h3>
+
+					<p>Posed in these terms, the matter — rising above socialism and the unfathomable chaos into which it has been plunged by the petty chieftains of its several tendencies — enjoys the merit of clarity and precision. I am an anarchist, a
+						political and social Huguenot; I deny everything and affirm naught but myself: because the sole truth of which I have material and moral proof and tangible, comprehensible and intelligible evidence, the only real, startling, non-arbitrary
+						truth not susceptible to interpretation, is myself I am. There I have a positive fact. Everything else is abstraction and, in mathematics, would be designated as “x”, an unknown quantity; and I need not trouble myself with it.</p>
+
+					<p>In essence, society consists of a vast combination of material and personal interests. The collective or State interest — by virtue of which dogma, philosophy and politics together have thus far demanded wholesale or partial forswearing
+						of individuals and their assets — is a sheer figment which, in its priestly garb, has furnished the basis for the fortunes of all the clergy, from Aaron right up to Monsieur Bonaparte. This imagined interest has no existence outside of
+						legislation.</p>
+
+					<p>It has assuredly never been the case, never will be the case and cannot be the case that upon this earth there exists an interest higher than mine, an interest to which I am obliged to make even a partial sacrifice of my interest. If
+						there are men upon this earth and if I am a man, my interest is the equal of any other’s. I cannot owe more than is owed to me; and cannot receive more than the measure which I give. But I owe no debt to him that gives me nothing; so I
+						owe no debt to that collective rationale (or indeed government) because the government gives me nothing and never could give me the equal of what it takes from me (and which, by the way, it itself does not have). In every instance, the
+						best judge of the appropriateness of a choice and the one who ought to determine if it ought to be repeated is myself; and in this regard I have no advice nor lessons nor, above all, orders to await from anyone else. It is the duty and
+						not just the entitlement of every individual to apply this line of argument to himself and not to forget it. That is the true, intuitive, unchallengeable and indestructible basis of the only human interest that should be taken into
+						consideration: the personal interest and individual prerogative. Does this mean that I wish utterly to deny the collective interest? Certainly not. Except that, having no taste for talking to no purpose, I have nothing to say. Having laid
+						down the basis for the personal interest, I operate with regard to the collective interest just as I ought to operate with regard to society when I introduced the individual. Society is the inescapable consequence of the aggregation of
+						individuals; likewise the collective interest a providential and inevitable consequence of the aggregation of personal interests. The collective interest will only be fully realised to the extent that it leaves personal interest
+						untouched; because, if the collective interest is understood to be the interest of all, in any society it requires only trespass against the interest of one single individual for the collective interest to cease immediately from being in
+						everyone’s interest and, as a result, for it to cease to exist.</p>
+
+					<p>In the inevitable course of things, the collective interest is a natural consequence of the individual’s interest. So true is this that the community will not seize my field so as to lay out a thoroughfare or will not ask me to retain my
+						trees for the improvement of the air without offering me compensation. But, just as it is in its interest to compensate me, so it is in mine to defer to it. So much for the collective interest which grows out of the nature of things.
+						There is another which is accidental and abnormal — war. It is not susceptible to this rule. It conjures up another rule and always does a good job of that. We need concern ourselves only with that which is constant. — But when the name
+						of collective interest is bestowed upon the one in light of which they shut down my workshop, prevent me from pursuing such and such an activity, impound my newspaper or my book, trespass against my liberty, ban me from becoming a lawyer
+						or doctor on the basis of my personal study and clientele, issue me with the order not to sell this or purchase that, when, in short, they dub collective interest that which they invoke in order to prevent me from earning my living
+						openly, in the manner of my choosing and under everyone’s gaze, I declare that I cannot understand it, or rather, that I understand only too well.</p>
+
+					<p>In order to keep the collective interest safe, a man who has cured his neighbour unlawfully — it is an offence to do good unlawfully — is condemned on the pretext that he has no qualification; a man is prevented from championing the
+						cause of a (free) citizen who has placed his trust in him; a writer is arrested; a publisher ruined; a propagandist thrown into prison; a man who cried out or behaved in a certain fashion is sent before the criminal assizes.</p>
+
+					<p>What do all these outrages profit me? What do they profit you? From the Pyrenees to the Channel and from the Ocean to the Alps I race, asking each and every one of the thirty six million Frenchmen what they have profited from these inane
+						acts of cruelty perpetrated in their name against wretches whose families moan, whose creditors fret, whose affairs are on the road to ruin and who, once they manage to struggle free of the rigours visited upon them, may well commit
+						suicide out of disgust or turn to crime out of hatred. And, faced with that question, not one knows what I meant to say, every single one disclaims responsibility for what has occurred and the wretchedness has drawn no response from
+						anybody. Tears have been shed and interests damaged in vain. Yet this is the savage monstrosity that goes by the name of the collective interest! As for myself, let me state that if this collective interest is not some dismal mistake, I
+						would describe it as the vilest mischief!</p>
+
+					<p>But let us cease to be this irate and bloody figment and let us say that, since the only way of arriving at the collective interest is through safeguarding of personal interests, it is apparent and sufficiently demonstrated that, in
+						terms of sociability and economics, the most important thing is to foster the personal interest above anything else. On which grounds I am correct in saying that the only social fact is the natural fact, the individual, the self.</p>
+
+					<h3 id="dogma">Individualist Dogma the Only Fraternal Dogma</h3>
+
+					<p>I do not wish to hear tell of revelation, tradition or Chinese, Phoenician, Egyptian, Hebrew, Greek, Roman, German or French philosophies; outside of my faith or my religion, for which I am answerable to none, I do not know what use to
+						make of the ramblings of ancestors; I have no ancestors. As far as I am concerned, the creation of the world dates from the day I was born; as far as I ant concerned, the world must end on the day when my body and the breath which go
+						together to make up my individual existence are returned to the earth. I am first roan and I will be last man. My history is a summary of the history of humankind; I know nothing else and wish to know nothing else. When I am suffering,
+						what comfort can I derive from someone else’s good fortune? When I am enjoying myself; what does my enjoyment profit those who are suffering? What do I care for what was done before me? How can what will be done after me affect me? I need
+						be neither a burnt offering to dead generations nor an example to posterity. I am encapsulated within the span of my existence, and the only problem I must resolve is the problem of my well-being. I have but one doctrine and that doctrine
+						has but a single formula, and that formula but a single word: ENJOYMENT.</p>
+
+					<p>Whoever recognises that is honest; whoever denies it an impostor.</p>
+
+					<p>It is the formula of a crude individualism, of an innate selfishness; I do not at all deny that; I confess it, place it on record and exult in it. If there is anyone who might feel himself harmed by it and would chastise me for it, bring
+						him before me so that I may question him. Does my selfishness do you some harm? If you say no, you have no grounds for objection, because I am at liberty in respect of anything not likely to do you harm. If you say yes, you are cheats,
+						because my selfishness is nothing more than my assertion of self-ownership, an appeal to my identity, a protest against all overlordship. If you feel harmed by the carrying out of this act of self-possession, by my assertion of rights
+						over my own person — which is to say, over the least questionable of my assets — you are acknowledging that I am your possession, or, at the very least, that you have designs upon me. You are exploiters (or are becoming such),
+						monopolists, lusting after other men’s goods, so many thieves.</p>
+
+					<p>There is no middle ground. Selfishness is either righteousness or robbery; I must either be my own property or be counted among someone else’s assets. It is unthinkable that I should be asked to abjure myself for the benefit of others,
+						because if everyone were to abjure themselves as I do, nobody would gain anything more than he had lost by this inane game and as a result would be left the same, which is to say, would derive no profit from it. Plainly, that would render
+						the initial sacrifice a nonsense. And if the self-sacrifice of all cannot bring benefit to all, it must of necessity profit only some. In which case the latter will be masters of everything, as will, in all likelihood, those who will be
+						hurt by my selfishness. So let them grit and bear it.</p>
+
+					<p>Every man is an egoist; anyone ceasing to be such becomes an object. Anyone claiming that he need not be so, is a thief.</p>
+
+					<p>Ah! but of course I understand! The word is jarring to the ear; thus far you have used it for those who are not content with their own assets, those who lay hands upon other men’s goods; but such people belong to the human race whereas
+						you do not. Do you know what you are doing when you bemoan their rapaciousness? Registering your own imbecile status. Up to now you have believed in the existence of tyrants. Well, you were mistaken. There are only slaves. Where none
+						obeys, none commands.</p>
+
+					<p>Listen well to this: the dogma of resignation, of self-sacrifice, of self-renunciation has always been preached at peoples.</p>
+
+					<p>And the upshot of it? Papacy and sovereignty by the grace of God. Oh, but the people has been resigned, has annihilated itself and has long denied itself.</p>
+
+					<p>What do you think? Is this right?</p>
+
+					<p>True, the greatest pleasure in which those somewhat befuddled bishops, the assemblies which have replaced the kings, the ministers who have replaced the princes, the prefects who have replaced the dukes — those greater vassals — the
+						prefects who have replaced the barons — those lesser vassals — and that entire retinue of subordinate officials who stand in for feudalism’s knights and petty nobles, can indulge; the greatest pleasure, I say, in which this entire
+						financial nobility, can indulge, is to retreat as quickly as they can into the traditional dogma of resignation, self-sacrifice and self-denial. Among their number you will still find protectors who will counsel you to scorn riches — and
+						you will be in danger of their stripping them from you — and you will find among them fanatics who, in order to salvage your soul, will preach continence to you — reserving for themselves the right to offer consolation to your wives, your
+						daughters or your sisters. Which is fine. Thanks be to God that we do not lack for devoted friends ready to stand condemned in our place whilst we abide by the old paths of righteousness from which they stand politely back, doubtless lest
+						they impede our progress along them.</p>
+
+					<p>How come all these relayers of the old hypocrisy are no longer feeling so at home upon the seats established by their predecessors? How come? Because selflessness is on the wane and individualism on the rid, because man is finding
+						himself a handsome enough figure to dare tear off the, ash and finally show himself in his true light.</p>
+
+					<p>Selflessness is slavery, shabbiness, wail, abjection; it is king, government, tyranny, mourning and civil war.</p>
+
+					<p>Individualism, on the other hand, is redemption, greatness, chivalry; it is man, people, liberty, fraternity and order.</p>
+
+					<h3 id="social">The Social Contract a Monstrosity</h3>
+
+					<p>Let everyone in society look to his own self and confirm himself alone and the sovereignty of the individual is established, government bereft of its raison d’etre, all supremacy undone and man the equal of his fellow-man.</p>
+
+					<p>That done, what remains? What remains is everything that governments have striven in vain to destroy: the essential and imperishable basis of nationality; the community that all authorities disrupt and disorganise so as to overthrow; the
+						municipality, that fundamental, age-old organisation which weathers all disorganisation and destruction. The community has its administration, its jurymen, its judicial organs; and, if it does not, it will conjure them. Thus, France,
+						being self-organised along municipal lines, she is also democratically self- organised. Insofar as her internal arrangements are concerned, there is nothing that needs doing; it has all been done; the individual is free and sovereign
+						within the nation.</p>
+
+					<p>Now, ought the nation or the community to have some synthetic, central agency to handle certain shared concrete material interests and act as interlocutor between the community and the outside world? This is not a problem for anyone; and
+						I cannot see that we need fret unduly about what everyone accepts is reasonable and necessary. What is at issue is the government; but a functional mechanism, a chancellery formed at the instigation of self-regulating communities, may, if
+						need be, constitute an administrative commission, but not a government.</p>
+
+					<p>Do you know what makes a mayor a bully in a community? The existence of the civil governor. Do but dispense with the latter, and the former must rely solely upon the persons who appointed him and the freedom of everyone is assured.</p>
+
+					<p>An institution answerable to the community is not a government; a government is an institution to which the community is obedient. That upon which the influence of the individual __can be brought to bear cannot be described as a
+						government; government is the name reserved for that which crushes individuals beneath the weight of its influence.</p>
+
+					<p>In short, what is at issue is not the civil act — the nature and character of which I shall set out anon — but rather the social contract.</p>
+
+					<p>There is not and cannot be a social contract, for one thing because society is not an artificial construct, nor a scientific fact, nor a mechanical combination; society is a providential and indestructible phenomenon. Like all animals
+						with social habits, men are by nature social. Man’s natural condition is of itself the state of society; thus it is absurd, if not outrageous, to try to establish by contract that which is already and inevitably constituted. Secondly,
+						because my social disposition, my pursuits, faith, feelings, affections, tastes, interests and habits alter every year or every month or daily, or several times per day and I am not disposed to enter into a commitment to anyone, by word
+						of mouth or writing, not to change my pursuit, conviction, sentiment, affection, interest, or habit. And, since I contend that, had I entered into any such undertaking, it would only have been for the purpose of breaking it, let me state
+						that, had I been forced into giving it, it would have been at once the most barbarous and most odious of tyrannies.</p>
+
+					<p>In spite of this, the social lives of every one of us started with a contract. Rousseau’ invented this question and for the last sixty years our legislation has been informed by the genius of Rousseau. It is by virtue of a contract
+						drafted by our forebears and subsequently renewed by the leading citizens of the Constituent Assembly, that the government forbids us to see, hear, utter, write or do anything other than we are allowed to. So much for the people’s
+						prerogatives, the alienation of which gives rise to the establishment of the government. Insofar as I am concerned, I dispute it and I leave it to others to serve it, pay for it, love it and, ultimately, perish for it. But even should the
+						French people as a whole agree to be governed in matters of education, religion, finance, industry, art, labour, affections, tastes, habits, movements and even in matters of foodstuffs, I am fully entitled to declare that its voluntary
+						servitude in no wise commits me, any more than its stupidity places my intelligence in question. And yet, in fact, its servitude envelops me and I cannot possibly escape it. No doubt about it; it is well known that the submission of six,
+						seven or eight million individuals to one man or more than one involves my own submission to that very same man or men. I defy anyone to characterise this act as anything other than treachery and I assert that never on this earth has the
+						barbarism of a people been translated as such outright banditry. Indeed, the sight of a moral coalition of eight million slaves ranged against one free man is a spectacle of wickedness against the barbarousness of which one could not
+						invoke civilisation without making it appear ridiculous or odious in the sight of the world.</p>
+
+					<p>But I cannot believe that all my countrymen are premeditatedly sensible of the necessity to serve. What I feel they all should feel; what I think, they all ought to think; because I am no more and no less than a man; I am on the same
+						plain and onerous terms as any working man. I am startled and shocked that with every step I take along the way, every thought that surfaces in my head, every venture that I would embark upon, every wage that I need earn, there is some
+						law or regulation telling me: So far and no further; Perish that thought; Steer clear of that venture; Leave half your wage here. Confronted by the many obstacles looming on every side, my cowed spirit sinks into brutishness: I know not
+						where to turn; I know not what to do, I know not what to become.</p>
+
+					<p>Who to the scourge of atmospheric disasters, air pollution, insalubrious climate, the lightning that science has mastered has added this occult and savage power, this evil genius laying in wait for humankind from birth, to see it
+						devoured by humankind itself? Who? Men themselves. Not content with having to contend with the hostile elements, they have made enemies of men.</p>
+
+					<p>The masses, as yet all too docile, are innocent of all the brutality committed in their name and to their detriment. They are innocents, but not ignorant; I believe that, like myself, they are sensible of it and outraged; I believe that,
+						like me, they would make haste to halt it; except that, unable to distinguish the cause properly, they do not know how to act. I am trying to enlighten them on both counts.</p>
+
+					<p>Let us start by pointing a finger at the guilty.</p>
+
+					<h3 id="attitude">Of the Attitude of the Parties and their Newspapers</h3>
+
+					<p>The sovereignty of the people has no mouthpiece among the French press. Bourgeois or noble, clerical, republican or socialist, the newspapers are all servitude and sheer domesticity; they polish and buff and dust the trappings of some
+						political war-horse in preparation for the tournament in which the prize is power — in which, consequently, the prize is my servitude and the servitude of the people.</p>
+
+					<p>With the exception of La Presse which occasionally (when its editors grow forgetful enough of their pride to remain aloof) displays some elevated sentiments and with the exception of La Voix du Peuple which, from time to time, breaks
+						with the old routine in order to cast a little light on the general interest, there is not one French newspaper that I can read without being moved either to great pity or profound contempt for the writer.</p>
+
+					<p>On the one hand I watch the man whose head is swathed in the aura of supreme power and whose hands clutch the sceptre consecrated by that investiture, turning to governmental journalism, to a journalism that owes its might to the gold
+						raised by taxation and to the army’s steel. I watch him approach with fire in his eye and foam on his lips, his fists clenched like some king of the ring, some boxing hero, whimsically and with brutal perversity challenging an unarmed
+						adversary utterly defenceless against him and from whom he need fear absolutely nothing, and labelling the latter thief, murderer and incendiary. He stalks him like a wild animal, denying him food and tossing him into prison without a
+						word of explanation and revelling in the act, wallowing in the glory thus won, as if a fight with unarmed people implied some risk and as if he were braving some danger.</p>
+
+					<p>I find such cowardice instructive.</p>
+
+					<p>On the other hand, we have opposition journalism, that grotesque, ill-educated slave; which squanders its time on complaints, whining and begging for mercy; which says, with every gob of spit and blow it receives: you treat me ill, you
+						are unjust, I have done nothing to offend you. And answers the charges levelled against it as if they had some legitimacy. I am no thief, no murderer and no incendiary; I have the utmost regard for religion, I love the family, I respect
+						property; it is, rather, yourselves who hold these things in contempt. I am better than you and yet you oppress me. You are unjust.</p>
+
+					<p>Such baseness revolts me!</p>
+
+					<p>Faced with polemicists such as these among the opposition, I can understand the authorities’ brutality; I can understand it because, after all, when the weakling is abject, it is easy to overlook his weakness and see only the abject
+						condition. This is an irritant, something to be plucked up and trampled underfoot the way one would tread on an earthworm. And abjection is something that I cannot comprehend in a group of men who style themselves democrats and speak in
+						the name of the people, the font of all greatness and all dignity.</p>
+
+					<p>Anyone who speaks in the people’s name is speaking up for righteousness; now I fail to understand how righteousness should bristle, I cannot understand how it should deign to bandy words with injustice, much less that it should stoop to
+						lamentation and supplication. Oppression may be endured, but when its demise is the object, one does not bandy words with it, because to bandy words is to compromise.</p>
+
+					<p>The authorities have been established; you have given yourselves a master, you have placed yourselves (and, thanks to your adorable counsel and initiatives, the entire country has placed itself) at the disposal of a few men. Those men
+						use the force that you have bestowed upon them; and they use it against you. And you are reconciled with them? What were you thinking? That they would use it against themselves? You could not have thought that; so, what is the basis of
+						your complaint? Power must, of necessity, be deployed for the advantage of those who possess it and to the detriment of those bereft of it, it cannot be deployed without detriment to one faction and advantage to the other.</p>
+
+					<p>What would you yourselves do if you were so invested? You would either not use it for anything (which would be purely and simply tantamount to forswearing your investiture) or you would employ it to your own advantage and to the
+						detriment of those now in possession of it and who would no longer have it. Whereupon you would cease your lamentation, whining and pleading for mercy, in order to step into the shoes of those who insult you and to place them in yours.
+						But what does the reversal matter to me? I, who never have any power and who yet make it; I who pay out money to the oppressor, whomsoever he may be and from wheresoever he may come; I, come what may, am always the oppressed. What matter
+						to me this see-saw alternatively humbling and exalting cowardice and abjection? What have I to say about government and opposition, except that the latter is tyranny in the making and the former tyranny ready-made? Why should I hold this
+						champion in deeper contempt than the other, when neither cares for anything except the building of his pleasures and his fortunes upon my pain and my ruination?</p>
+
+					<h3 id="enemy">Power the Enemy</h3>
+
+					<p>In France there is not a single newspaper that does not support a party, no party that does not aspire to power, no power that is not the enemy of the people.</p>
+
+					<p>There is no newspaper that does not support a party because there is no newspaper on a par with that level of popular dignity where blithe, supreme contempt for sovereignty prevails. The people is as impassive as righteousness, as
+						overbearing as strength, as noble as liberty; parties are as turbulent as error, as irascible as impotence, as base as servility.</p>
+
+					<p>There is no party without aspiration to power, because a party is essentially political and, as a result, is composed of the very essence of power, the root of all politics. If a party were to cease to be political, it would cease being
+						a party and would melt back into the people, which is to say, into the realm of interests, production, industrial pursuits and intercourse.</p>
+
+					<p>There is no power that is not the enemy of the people, because, no matter what the attendant conditions, no matter who the man invested with it, no matter how it may be described, power is always power, that is to say, the irrefutable
+						badge of abdication of the people’s sovereignty and consecration of supreme overlordship. La Fontaine said it before me: the master is the enemy.</p>
+
+					<p>Power is the enemy in social terms and in political terms.</p>
+
+					<p>In the social realm:</p>
+
+					<p>Because agricultural industry, the lynchpin of all the nation’s industries, is crushed by the taxes imposed upon it by the authorities and devoured by usury (the inescapable result of financial monopoly), the practice of which by its
+						disciples or agents is guaranteed by the powers-that-be.</p>
+
+					<p>Because labour, which is to say, intelligence, is expropriated by power at bayonet point, for the benefit of capital (an element inherently coarse and dull-witted), which would logically be industry’s lever were it not that the
+						powers-that-be thwart direct partnership between capital and labour. And it turns from lever to coffin, all because of the powers-that-be, which keep them apart, the powers-that-be which pay out only half of what they owe and which, when
+						they pay out nothing at all, have — through their manipulation of the laws and the courts — some government institution standing by to postpone by many a long year the satisfaction of the appetite of the wronged working man.</p>
+
+					<p>Because commerce is stunted by the banks’ monopoly — to which the powers-that- be hold the key — and tightly restricted by the slip knot of stultifying regulation — more of the handiwork of the powers-that-be. And commerce has to grow
+						rich indirectly, fraudulently, over the heads of women and children, whilst it is forbidden to go bankrupt on pain of disgrace (this is a contradiction that would be proof indeed of idiocy, were it not that it is to be found among the
+						most. spiritual people on this earth).</p>
+
+					<p>Because education is inscribed, truncated and reduced to the narrow dimensions of the model devised by the powers-that-be, in such a way that any intelligence not bearing its seal of approval might as well not exist.</p>
+
+					<p>Because, although he attends neither chapel, church nor synagogue, the non- attender must, thanks to the meddling of the powers-that-be, bear the costs of chapel, church and synagogue.</p>
+
+					<p>Because — to make a long story short — anyone who does not hear, see, speak, write, think and act as the powers-that-be require him to hear, see, speak, write, feel, think and act, is criminalised.</p>
+
+					<p>In the political realm:</p>
+
+					<p>Because the parties only exist and bleed the country with and for power.</p>
+
+					<p>It is not Jacobinism that the Legitimists, Orleanists, Bonapartists and moderates fear: it is the power of the Jacobins.</p>
+
+					<p>It is not Legitimism that the Jacobins, Orleanists, Bonapartists and moderates fight against: it is the power of the Legitimists.</p>
+
+					<p>Likewise, all of these parties which can be seen swarming over the surface of the country the way that foam floats upon a boiling liquid have not declared war on one another because of any doctrinal differences, but precisely because of
+						their common aspiration to power. If each and every one of those parties could know for sure that it would not feel the weight of the power of some one of its enemies, their antagonism would be banished in an instant, the way it was on 24
+						February 1848, when the people, having overthrown the powers-that-be, swept the parties aside.</p>
+
+					<p>From which it follows that a party, any party, exists and is feared only because of its aspiration to power. And if somebody bereft of power represents no danger, it must consequently be true that anybody possessing power is
+						automatically a danger; from which it must be abundantly proven that there is no other public enemy but power.</p>
+
+					<p>Consequently, in social and political terms, power is the enemy. And, as I shall be demonstrating anon that all parties crave power, it follows that each and every party is, premeditatedly, an enemy of the people.</p>
+
+					<h3 id="time">The People Merely Wasting its Time and Prolonging its Suffering by Espousing the Struggles of Governments and Parties</h3>
+
+					<p>This accounts for the absence of every popular virtue from the ranks of governments and parties; which explains how, in these swollen bands of petty hatreds, wretched resentments and squalid ambitions, attack has deteriorated into low
+						cunning and defence into abjection.</p>
+
+					<p>Corrupt journalism must be eradicated. These ignoble masters who are afraid of becoming slaves must be deposed and these faint-hearted slaves who would fain be masters must be driven out.</p>
+
+					<p>If it is to grasp the urgent necessity of ridding itself of journalism, the people must have clear sight of two things:</p>
+
+					<p>In the first place, that in taking a hand in the strife between governments and parties and directing its energies into politics instead of devoting them to its material interests, all it is doing is neglecting its affairs and prolonging
+						its suffering.</p>
+
+					<p>Secondly, that it can expect nothing from any government, from any party.</p>
+
+					<p>Indeed — as I shall demonstrate later in greater detail — it can be argued that a party, divested of the patriotic veneer and cachet in which it dresses itself up in order to entrap the stupid, is merely a motley crew of the vulgarly
+						ambitious in hot pursuit of places.</p>
+
+					<p>So true is this that the Republic only looked tolerable to monarchists once they could be assured of public offices and I am certain that they will never press for restoration of the Monarchy if they are left in peace to hold all the
+						offices in the Republic. So true is this that the republicans only found the monarchy bearable once they could operate and administer it under the designation of Republic. Finally, so true is it that the bourgeois party made war on the
+						nobles from 1815 to 1830 because the bourgeois were being kept at arm’s length from important posts; that the nobles and republicans waged war on the bourgeois from 1830 to 1848 because both of them were being kept out of those same posts
+						and, once the monarchists came to power, the greatest reproach that republicans could articulate against them was that they had dismissed officials of their persuasion, thereby recognising, in a telling fashion, that as far as they are
+						concerned the matter of the Republic is a marginal concern.</p>
+
+					<p>Just as a party is geared to capturing posts or power, so the government, which controls these, is geared to holding on to them. But a government is surrounded by a panoply of forces that allow it to harass, persecute and oppress those
+						who would wrest them from its control. And the people, which, as an indirect consequence, suffers the oppressive measures inspired by the agitation of the ambitious — and whose unselfish soul soaks up the tribulations of the oppressed —
+						sets aside its affairs, pauses in its progress, takes an interest in what is being said and done, gets heated and annoyed and finally throws its weight behind bringing about the downfall of the oppressor.</p>
+
+					<p>But, not having been fighting for its own interests, the people win to no advantage — especially since, as I shall explain anon, righteousness need not fight in order to emerge triumphant. Placed in the service of the ambitious, its
+						might has catapulted a fresh clique into power in place of the preceding one. Within a short while, as the erstwhile oppressed in turn become oppressors, the people — who, as ever, suffer the aftermath of the measures provoked by the
+						agitation of the defeated faction, and whose warm heart, as ever, soaks up the tribulations of the victims — again turns away from its own interests and winds up throwing its weight behind the ambitious yet again.</p>
+
+					<p>In short, in this brutal and cruel game, the people is merely wasting its time and exacerbating its condition; it is impoverished and it suffers. And advances by not so much as a single step.</p>
+
+					<p>I will readily admit that the popular elements (all sentiment and passion) find it hard to restrain themselves when the goad of tyranny wounds them too intensely; but it has been shown that allowing themselves to be swept along by the
+						covetous impatience of the parties simply makes things worse. It has been demonstrated also that the scourge of which the people must complain comes from groups which, merely because they do not operate as it does, work against it. The
+						parties ought to cease their iniquity in the name of the very people that they oppress, impoverish, brutalise and accustom to a life made up of nothing but lamentations. No store should be placed by the parties. The people ought to rely
+						on none but itself.</p>
+
+					<p>Without harking too far back into our history, and looking only to the pages covering the past two years, it can readily be seen that the turbulence of the parties has been the number one cause of all the repressive laws which have been
+						passed. It would be a protracted and irksome thing to list them here, but, out of respect for the integrity of the historical record, I ought to say that since 1848 there has been only one tyrannical measure that did not spring from
+						partisan provocations, but was spawned by the lust for power alone; I mean the one that M. Ledru-Rollin has required his prefects to enforce.</p>
+
+					<p>Ever since then, the people’s prerogatives have been disappearing one after another, due to the way in which they have been abused by the impatience of the ambitious as expressed in agitational manoeuvres. Power being incapable of
+						discriminating, the law inflicts upon everyone blows that only the provocateurs should be feeling; the people is oppressed and the blame lies solely with the parties.</p>
+
+					<p>If, at the least, the parties did not feel that they had the people’s backing; if only the latter, occupied solely with its material interests, industrial pursuits, commerce and business were to blunt the squalid stratagem called
+						politics with its indifference and indeed its scorn; if only it would adopt towards this psychological excitation the same attitude as it adopted on 13 June’ vis a via material agitation, then the parties, suddenly isolated, would cease
+						their agitation; a feeling of powerlessness would put a damper on their daring; and they would promptly peter out and gradually melt back into the ranks of the people and eventually disappear. And the government — which only exists
+						because it is opposed, whose sole nourishment is drawn from the problems that the parties create for it and which has no raison d’etre beyond those parties and which, in short, has, for the past fifty years been doing nothing except
+						defending itself and which, if it were to relent in its defence, would cease to exist — the government, I say, would putrefy like a dead body; it would moulder unaided and freedom would be assured.</p>
+
+					<h3 id="expect">The People Need Expect Nothing from Any Party</h3>
+
+					<p>But the disappearance of government, the annihilation of the governmental institution, the triumph of freedom about which all the parties talk would really not serve their interests. I have given abundant proof that every party, by its
+						very nature, is essentially governmental (this being a feature kept from the people with the utmost care). In fact, in their day to day polemics, we are given to understand that the government is doing a bad job, that its policy is wrong
+						but that things might be done better and that its policy could be better. When all is said and done, through the articles of every single journalist, this thought shines through: If only I were there, then you would see some REAL
+						government!</p>
+
+					<p>Very well! Let us see if there really is an even-handed way of governing; let us see if it really is possible to set up a government offering leadership and with a will of its own, a power and authority founded upon the democratic
+						foundations of respect for the individual.</p>
+
+					<p>I am concerned to make a thorough examination of this matter, because I stated a short while ago that the people need expect nothing from any government nor from any party and so I am keen to demonstrate this. Let us say that the year is
+						1852; the power that you Montagnard, socialist and moderate gentlemen — it makes no difference to me — hope to win, you have. I am pleased to find that the majority has tilted towards the left. You are a welcome sight! Please, would you
+						explain to me your thinking on what must be done?</p>
+
+					<p>I want to ignore your internal differences; I refuse to see you as a Girardine, Proudhon, Louis Blanc or a Pierre Leroux, Considérant, Cabet, Raspail or their disciples; I am going to pretend that perfect unity prevails in your ranks
+						(and if I am taking the impossible as read in this instance it is because my primary concern is to facilitate argument).</p>
+
+					<p>Anyway, here we have you, all in accord. What are you going to do?</p>
+
+					<p>Release all the political prisoners; a general amnesty. Fine. No doubt you will be making an exception for the princes. Thereby demonstrating that you are afraid of the power of their supporters — and such fear will highlight a weakness
+						of yours, the weakness of acknowledging that they might very well be preferred over you, an acknowledgment that would imply that there is some uncertainty on your part as to whether you are carrying out the general will.</p>
+
+					<p>Even after injustices in the political order have been set right, the economy and the life of society carry on deteriorating.</p>
+
+					<p>Naturally, you are not going to confess your bankruptcy, since you are the very ones who took M. Fould to task. The nation’s honour, which you mean, Gamier-style, to sell for 45 centimes, will require that you respect the Bourse, to the
+						cost of 35 million tax-payers, since the debt run up by the monarchies is of too noble a character for the entire French people not to have to be bled of 450 millions a year for the benefit of a handful of speculators. So you would begin
+						by settling the public debt: poor, but honest. Those two adjectives do not particularly suit the times we live in; but, ultimately, you are still operating in the same way as in the old days and the people, as deep in debt as ever, can
+						think what they like about it.</p>
+
+					<p>But now that I think of it, you must above all make the poor, the workers, the proletarians your overarching concern; here you come with a bill on taxation of the rich. About time tool Let us analyse who precisely will be paying for it.
+					</p>
+
+					<p>Let’s say that I am a capitalist and you ask me to hand over a percentage. Damn! How am I to recover it? Now that I think about it, I am not the one who uses my capital; I lend it to industry. The industrialist is in sore need of it and
+						will not balk at an increase in the lending rate; so I will be passing the levy on to him. Taxation on capital plainly falls upon labour’s shoulders.</p>
+
+					<p>I live off my income and you add to the public debt. That is a worrying thing and no mistake. However, there is a way of wriggling out of it. To whom am I in debt? The State. That being the case, there is no great shame involved. The
+						levy imposed on bonds subtracts something from their value right away, and since the loss of value is to the disadvantage of the debtor, to wit, the State, and to the advantage of the Treasury, to wit, the State, the latter dips into its
+						pockets in order to fill its coffers and is no worse off than before (as am I). This is very adroit sleight of hand and I have to admit that it does have class.</p>
+
+					<p>Say I own houses in town and you tax my apartments; I have nothing, absolutely nothing to say about this. You will be settling accounts with my tenants; because you will surely not think me so stupid as not to tack the costs of the tax
+						on to their rents.</p>
+
+					<p>The most meaningless words uttered since the February revolution are these: ‘Tax the rich!” These are words which are, if not perverse, then at least profoundly witless. I do not know who the rich are in a country like this one where we
+						are all in debt and where the practice is for most landlords, owners and capitalists to spend more per year than they earn. In any event, even accepting that the rich man exists, I defy you to snare him; your efforts to do so are
+						indicative only of a tremendous ignorance of the elementary laws of social economics and fellowship of interests. The blow that you wish to deal the rich will be deflected on to the manufacturer, the proletarian, the pauper. You have no
+						wish to do the poor any harm? Then impose taxes on no one. Run France on 180 or 200 million, the way the United States are run. And in a country such as France, 200 million can easily be found. Are we not perhaps squandering a hundred by
+						smoking bad cigars?</p>
+
+					<p>But in order to accomplish this all that would be required would be administration; you, however, wish to govern; which is a quite different kettle of fish. Lash out at the rich, therefore, after which you can settle your scores with the
+						poor.</p>
+
+					<p>Already financial reforms are producing a goodly number of malcontents (these matters of money are very delicate, you see). Anyway, let us move on.</p>
+
+					<p>You proclaim unfettered freedom of the press? This you cannot do. If you tinker with the basis of taxation and tinker with the public purse, you will be setting yourself up for a debate from which you will not come off the best.
+						Personally, I feel disposed to set out your lack of expertise on this count in great detail, even if your need for self-preservation will compel you to have me silenced (in which you will be very well advised).</p>
+
+					<p>Consequently, on account of finances, the press will not be free. No government that tampers with great interests can proclaim freedom of the press; this it is expressly forbidden from doing. You will not be short on promises; but
+						promising is not the same as delivering. Ask Monsieur Bonaparte.</p>
+
+					<p>Obviously, you will be holding on to the education ministry and the University monopoly; except that you will be steering education in a philosophical direction only, declaring outright war on the clergy and the Jesuits — which will turn
+						me into a Jesuit in opposition to you, just as I became a philosopher in opposition to M. Montalembertts, for the sake of my liberty, which consists of my being whatsoever I please, without either you or the Jesuits having any say in the
+						matter.</p>
+
+					<p>And what of religion? Are you going to do away with the ministry of religion? I doubt it I imagine that, in the interest of govern--maniacs, you will be setting up ministries rather than doing away with them. There will be a ministry of
+						religion just as there is today and I will wind up paying for priest, parson and rabbi, even though I attend neither Mass, nor service nor feast.</p>
+
+					<p>You will be holding on to the ministry of commerce, the agriculture ministry and the ministry of public works. And especially the ministry of the interior, because you are going to have your prefects, sub-prefects, State police, etc. And
+						whilst you are holding on to and heading all these ministries — which are the very component parts of today’s tyranny — you will carry on saying that the press, education, religion, commerce, public works and agriculture are free. But
+						that is precisely what you are saying at present. So what will you be doing that you are not already doing today? Let me tell you: instead of attacking, you will be defending.</p>
+
+					<p>I cannot see that you have any option but to change the entire personnel of your administrations and offices and treat the reactionaries the way the reactionaries treat you. But is the name for that not government? And is not this system
+						of reprisals the very essence of government? If I am to judge by what has been going on over the past sixty years, I have a clear picture of the only thing you will be doing by becoming the government... Allow me to affirm that governing
+						is the very same as fighting, wreaking revenge and inflicting punishment. Now, if you cannot see that it is across our backs that you are scourged and that you in turn lash out at your adversaries, we for our part cannot disguise the fact
+						and we believe that the spectacle must be brought to an end.</p>
+
+					<p>To sum up the entire powerlessness of a government, any government, to encompass the public good, let me state that no good can come about in the absence of reforms. But every reform of necessity represents a liberty and every liberty a
+						morsel of strength acquired by the people and, at the same time, a trespass against the integrity of the powers-that-be. From which it follows that the road of reforms — which is the road to freedom as far as the people is concerned — is
+						inevitably the road to ruin as far as the powers-that-be are concerned. So if you say that you crave power in order to introduce reforms, confess at the same time that you want to achieve it with the premeditated intention of abjuring it.
+						And since I am not so stupid as to believe that you can be so naive, I can see that it would run counter to every law of nature and society — and mainly the law of self- preservation, which none of us can sidestep — for men invested with
+						public authority to voluntarily forswear that investiture and the princely rights that allow them to live in the midst of plenty without their having to weary themselves in its production. So go tell your fairy-tales somewhere else!</p>
+
+					<p>Your government can have but one purpose; to wreak revenge upon its predecessor; just as the one coming after yours can have but one purpose; to be revenged on you. Industry, production, commerce, the people’s affairs and the interests
+						of the multitude cannot flourish in the midst of this contention. Allow me to propose that you be left to your own devices to punch one another’s faces in, whilst we look to our own interests.</p>
+
+					<p>If the French press wishes to be worthy of the people to which it addresses itself, it must cease with its sophistry in respect of the dismal affairs of politics. Leave to the rhetoricians the sport of concocting laws that interests and
+						usages will overrun. Please, do not allow your pointless braying to interrupt the unfettered development of interests and the manifestation of practice.</p>
+
+					<p>Politics has never, ever, taught anyone how to go about earning his bread honestly; its precepts have served only as a spur to cowardice and an encouragement to vice. So, no more talk of politics. Fill your columns with features on
+						economics and commerce; tell us about useful inventions; about discoveries made somewhere that may be materially or morally of service to the boosting of production and well-being, keep us abreast of the progress of industry so that,
+						through such reports, we may find a way of earning a living and of living our lives in comfortable surroundings. All of which means a lot to us than your inane dissertations on balance of powers and infringements of a Constitution which —
+						to be candid — even in its virgin state, did not strike me as very deserving of respect.</p>
+
+					<h3 id="sufferage">On Electorate or Universal Suffrage</h3>
+
+					<p>What I have just been saying brings me on naturally to scrutiny of the root causes of all such vices. As far as I am concerned, those causes must be sought in elections.</p>
+
+					<p>For the past two years and for sordid reasons of which — I should like to believe — the parties are unaware, the people has been nurtured in the belief that it will not achieve sovereignty and well-being other than through the assistance
+						and intervention of regularly elected representatives.</p>
+
+					<p>The vote — excepting in a municipal context — can lead the people on to freedom, sovereignty and well-being about as much as wholesale surrender of all one owns can lead a man on to a fortune. By which I mean to say that the exercise of
+						universal suffrage, far from copper-fastening it, amounts to pure and simple surrender of sovereignty.</p>
+
+					<p>Elections, concerning which the sophists of the last revolution could prate so much and with such gravity; elections, if afforded priority over freedom, are like the fruit before the flower, like the consequence before the principle, the
+						right before the act; the most po-faced stupidity that could ever have been devised in any age or place. Those who have ventured, those who have dared to summon the people to the ballot box before allowing them to consolidate their
+						freedom have not only grossly abused the people’s inexperience and the frightful docility inculcated into its character through protracted dependency; they have also, by issuing orders and by that very act declaring themselves its
+						betters, ignored the fundamental rules of logic — which ignorance must lead them on to falling victim to their hellish claptrap, leading to their sad meanderings in exile under the lash of the outcome of universal suffrage.</p>
+
+					<p>It is a curious fact — one to which I must call the reader’s attention, especially with an eye to the proof which is to follow — that universal suffrage has worked to the benefit of its declared enemies, which is to say, to the advantage
+						of the servants of monarchy. The people has thanked those responsible for its enslavement; by means of its votes, it has awarded them the right to hunt it down with snare and bait, to stalk and harry, snipe and trap, with the law for a
+						weapon and its neighbours for hunting hounds.</p>
+
+					<p>I believe that it is licit for me not to embrace uncritically this supposed “panacea” of democracy that goes by the names of electorate or universal suffrage, when I observe that it destroys those to whom it owes its birth and affords
+						omnipotence to those who have tortured it right from its birth. Likewise, let me declare that I fight it the way one would an evil demon, an overweening monstrosity.</p>
+
+					<p>The reader will have grasped by now that the point here is not to challenge an entitlement of the people but rather to correct a fatal mistake. The people has all rights imaginable. For myself, I claim all rights, including the right to
+						blow out my brains or throw myself in the river. However — apart from the fact that the right to suicide, being a breach of natural law, can scarcely be termed a right and becomes instead an anomalous prerogative, into a form of
+						desperation — even that overheated departure from the norm (which I too shall treat as a right for the purposes of argument) could in no wise entitle me to inflict upon my neighbours the fate appointed for myself. Can the same be said of
+						the right to vote? No. In this instance, the voter’s commitment has implications for the abstainer as well.</p>
+
+					<p>I persist in the belief that electors are unaware that in going to the ballot box they are committing civil and social suicide; an old prejudice alienates them from themselves and their habit of accepting government blinds them to the
+						fact that it would suit them better to look out for themselves. But even supposing, to take the argument to extreme lengths, that the electors who set aside their own affairs and neglect their most pressing interests in order to go out
+						and cast their votes, are indeed cognizant of this fact — namely, that in voting they divest themselves of their liberty, sovereignty and fortune, for the benefit of their elected representatives who will henceforth dispose of them — even
+						supposing that they accept this and agree freely but crazily to place themselves at the disposal of their mandatories — I fail to see why their alienation ought to commit their neighbours. I cannot see, for instance, how or why the three
+						million French who never vote are targeted for the lawful or arbitrary oppression visited upon the country by a government returned by the seven million electors who do vote. In short, I fail to see why it should be that a government that
+						I had no hand in making, nor had any desire to make, nor would ever agree to make, should come along and demand my obedience and my money, on the grounds that it has the authority from its makers. Obviously there is trickery at work here
+						and on this count we must explain ourselves, which is what I am about to do. But first allow me to set out the following consideration, prompted by the elections on the 28th of this month.</p>
+
+					<p>When the notion occurred to me to bring out this newspaper I did not choose the right day, nor did I even think about the elections in preparation; moreover my ideas are too lofty for them ever to be tailored to circumstances and
+						eventuality. Also, even supposing that the impact of this present exposition were to prove damaging to any party — which is certainly a gratuitous assumption — one voice more or less on right or left is not going to alter the make-up of
+						parliament. And after all, there is no need for alarm even should the parliamentary system in its entirety fall under the blows from my arguments. Given that it is that very system that I am fighting against, that will at least prevent me
+						from going any further.</p>
+
+					<p>Moreover, it is a lot more important than knowing if I am discomfiting the enthusiasts of universal suffrage or those who exploit it, that I make sure that my teachings are founded upon reason; and, on this latter score, my mind is
+						perfectly at ease. I venture to say that, but for the absolute assurances that the obscurity of my name offers against attack from those who feed off electioneering, I might yet discover in the sturdiness of my case a haven where prudence
+						would counsel them against seeking me out.</p>
+
+					<p>The parties will greet this newspaper with contempt; to my mind, that is the wisest course they can adopt. They would be compelled to show it too much respect were they not to disdain it. This newspaper is not one man’s newspaper; it is
+						the newspaper of MAN or it is nothing.</p>
+
+					<h3 id="elections">In These Times Elections Are Not and Cannot Be Anything But a Fraud and a Robbery</h3>
+
+					<p>That said, I will tackle the situation without heeding the feelings of fear or dreams of hope that are evoked, from time to time, in those who look to the monarchy and in the prophets of dictatorship. Availing of the inalienable right
+						afforded me by my status as a citizen and my interest as a man, and reasoning dispassionately as well as without weakness; as austere as my rights and a serene as my thinking, I will say:</p>
+
+					<p>Every individual who, in the current state of affairs, drops a paper into the ballot box to choose a legislative authority or an executive authority is — perhaps not wittingly but at least out of ignorance, maybe not directly, but at
+						least indirectly — a bad citizen. I repeat what I have been saying and recant not a single syllable of it. In presenting the matter in this way, I shrug off the monarchists once and for all who chase after their goal of electoral
+						monopoly, and the republican governmentalists who turn the formation of political authorities into a common law product; in reality I plump, not for isolation — which would in any event matter little to me — but for the vast democratic
+						body — upwards of a third of registered electors — whose ongoing abstention registers a protest against the unworthy and wretched fate which, for the past two years and more has left them to endure the foul ambition and no less foul
+						plunder of parties and parasites.</p>
+
+					<p>Out of the 353,000 electors registered in the Seine department, only 260,000 participated in the voting on 10 March last, even though the number of abstentions this time around was smaller than in preceding elections. And, what with
+						Paris being a more active seat of politics that the rest and therefore host to fewer indifferent persons than the provinces, it is true to say that the political authorities are returned without upwards of one third of the country’s
+						citizens playing any part in the process. It is to that third that I address myself. Because among them, it will be agreed, there is none of the fear that casts its vote with an eye to maintaining the status quo, none of the ambition that
+						casts its vote in order to gain ground, none of the slavish ignorance that votes for the sake of voting; there one finds the philosophical serenity that implants useful toil, uninterrupted productivity, hidden merit and modest courage in
+						a peaceable conscience.</p>
+
+					<p>The parties have hung the label of bad citizens on these wise and serious philosophers of material interests who have no truck with the Saturnalia of intrigue. The parties are horrified by political indifference, that non-porous metal
+						that withstands corruption by any rule. It is high time that we paid attention to these legionaries of abstention, because it is among them that democracy is to be found; it is among them that liberty resides so exclusive and so absolute
+						that such liberty will not be achieved by the nation except on the day when the entire populace apes their example.</p>
+
+					<p>In order to clarify the proof I am offering, I must examine two things: first, what is the object of the political vote? And second, what must be its inevitable outcome?</p>
+
+					<p>The political vote has a dual purpose, the direct and the indirect. The first is to establish an authority; the second — once that authority has been established — to set the citizens free and reduce the burdens by which they are heavily
+						laden; and also to render them justice.</p>
+
+					<p>This, if I am not mistaken, is the acknowledged purpose of political voting, as far as the domestic scene is concerned. External affairs are not the issue here.</p>
+
+					<p>So, by going along to vote and by the very act of voting, the voter acknowledges that he is not free and awards the person for whom he is voting the power to set him free; he is admitting that he is oppressed and agreeing that the
+						authorities have power to raise him up again; he makes a declaration of his desire to see justice instituted and surrenders to his delegates all authority to judge in the matter.</p>
+
+					<p>Very well. But is not the granting of such powers to one or more men tantamount to my forswearing my liberty, my fortune and my rights? Is it not a formal admission that that man or those men — who may set me free, raise me up again, sit
+						in judgement of me — also have the capacity to oppress, ruin and judge me ill? Indeed, it is impossible for them do anything else, given that, having transferred all my rights to them, I now possess none and in clinging to those rights
+						they are merely looking to their own protection.</p>
+
+					<p>If I ask something of someone, I am admitting that he possesses what I ask for, it would be an absurdity for me to request that which is already mine. Had I the use of my liberty, fortune and rights, I should not be asking the
+						authorities for them. If I do ask them of the authorities, it is probably because they possess these things and, if that is the case, I fail to see what lessons they need to take from me regarding the use they see fit to make of them.</p>
+
+					<p>But, how come the authorities find themselves in possession of what belongs to me? How did they pull it off? The powers-that-be, to take our example from the present, comprise of Monsieur Bonaparte who, only yesterday, was a poor outlaw
+						with not too much liberty, and no more money than he had liberty; the seven hundred and fifty thundering Jupiters who — dressed like everybody else and certainly no more handsome — it is only months since they were chatting with us — and
+						who are in no wise our betters, I venture to say, seven or eight ministers and their acolytes, most of whom, before they held the purse strings, held the devil by the tail with as much obstinacy as any secretary.</p>
+
+					<p>How comes it that these poor wretches of yesterday are my masters today? How is it that these gentlemen hold power and have transferred all liberty, all wealth and all justice to it? Whom are we to hold responsible for the harassment,
+						impositions and iniquities that we are all suffering today? Why, the voters of course.</p>
+
+					<p>The Constituent Assembly, which started to draw us into the dance; Monsieur Louis Bonaparte who carried on with the manipulation; and the Legislative Assembly, which added its voice to the chorus. None of this was achieved unaided. No,
+						it is all the product of voting. The responsibility for what has happened and for what is to follow lies with all who voted. We democrats who labour and abstain accept none of this responsibility. Do not look to us for solidarity with
+						oppressive laws, inquisitorial regulations, murders, military executions, imprisonments, transfers and deportations — the immediate crisis by which the country is being ground down. Beat your own breast and prepare yourselves for the
+						judgment of history, you maniacs for government! Our consciences are clear. It is enough that, through a phenomenon that defies all reason, we must endure a yoke that you manufactured alone; it is enough that you have placed in pawn,
+						along with your own possessions, that which was not your own — what ought to have been inviolable and sacred — the liberty and fortunes of the rest of us.</p>
+
+					<h3 id="birthright">Birthright and the French People’s Mess of Pottage</h3>
+
+					<p>Do not think, ye deluded bourgeois, ruined gentlemen and sacrificed proletarians; do not think that what happened might not have happened had you appointed Peter instead of Paul, had your votes been cast for John and not for Francis. No
+						matter how your vote is cast you yield yourselves up and no matter who emerges as the winner, his victory damages you. No matter who it may be, you will have to ask everything of them; which means that you will never recover possession of
+						anything.</p>
+
+					<p>Moreover, understand this — and it is not absolute science, merely pure and simple fact — that had the ill emanated solely from the reactionaries, or had the revolutionaries been in a position to look after your fortunes, you would not
+						be rolling in wealth. Because all governments, from Robespierre to Marat — God rest their souls — were revolutionary; this Assembly that stands before you, before your very eyes, is also made up entirely of revolutionaries. No one was
+						more revolutionary than Monsieur Thiers, the administrator of Our Lady of Loreto. Monsieur de Montalembert has uttered such speeches on liberty that no one could improve upon. Monsieur Berryer was a conspirator from 1830 to 1848. Monsieur
+						Bonaparte has made revolutions in writing, by word of mouth and through his actions; and I am not even going to speak of the Mountain’s Convention, a gathering which for months on end held in its possession all of the trappings of
+						government with which it could have wrapped you in opulence. All men have been revolutionaries until they joined the government; but all men too, once they have become part of it, have suffocated the revolution. Should I myself someday
+						find that you have handed the government over to me, and if in a moment of forgetfulness and dizziness, instead of feeling pity and contempt for your stupidity, I were to accept the title of sponsor of the theft you perpetrate against
+						yourselves, then, by God, I swear that I would make the outlook bleak for you! Haven’t your past experiences been enough for you? You really are slow on the uptake.</p>
+
+					<p>It is only a short while since you enthroned a White government the sole object of which — and you can scarcely take it to task for this — was to get rid of the Reds. If, tomorrow, you were to set up a Red government, its sole object —
+						and you would do well to find fault in this! — will be to dispose of the Whites. But the Whites take no revenge on the Reds and the Reds take none on the Whites except through the agency of prohibitive and oppressive laws. And upon whom
+						do these laws weigh heavily? Upon those who are neither Reds nor Whites, or who are, to their cost, as Red as they are White; upon the blameless multitude; and so the people is utterly pulverised by the cudgel blows that the parties mete
+						out to one another.</p>
+
+					<p>Not that I am criticising the government. It was set up in order to govern and govern it does. It avails of its rights and, no matter what it does, in my view it is doing its duty. In affording it power, the vote has implicitly told it;
+						the people is perverse, yours is the righteous path; it is headstrong, where you are moderation; it is stupidity where you are intelligence. The vote which said this to the current majority, to the incumbent president, will say as much
+						again — because it can say no other — to any majority, any incumbent.</p>
+
+					<p>So, thanks to the vote and everything that goes with it, the people places itself bodily and in its possessions at the mercy of its elected representatives so that the latter may use and abuse the liberty and fortunes entrusted to their
+						care; entrusted without reservation, for authority has no limits.</p>
+
+					<p>You may say: But what about probity? What about discretion? What about honour! Piffle. You indulge in sentiment when you ought to be indulging in calculation. If you stake your interests on conscience, you are investing in a bottomless
+						pit; conscience is a safety valve.</p>
+
+					<p>Reflect for a moment upon what you are doing. You cluster around a man as if around a relic; you kiss the hem of his garment; your acclamation of him is deafening, you shower him with gifts; you fill his pockets with gold; for his
+						benefit, you strip yourselves of all your wealth; you tell him — Be free beyond the free, rich beyond the rich, strong beyond the strong, just beyond the just. And you imagine you can then oversee the use he makes of your gifts? That you
+						can criticise this, disapprove of that, calculate his expenditure and call him to account? What account would you have him give? Have you handed him a bill for what you gave him? Are your accounts in deficit? Well: you have no claim
+						against him. The bill that you would submit is worthless. He owes you nothing.</p>
+
+					<p>Now you shout and kick up a fuss and threaten! The brouhaha is pointless. Your debtor is your master: bow your heads and move along.</p>
+
+					<p>The Bible states that Esau sold his birthright for a mess of pottage. The French go one better; they make a gift of their birthright and of their mess of pottage along with it.</p>
+
+					<h3 id="gov">What Conjures Governments into Existence is Not What Keeps Them Alive</h3>
+
+					<p>Let me say again that I am not discussing rights; what I am discussing, rather inopportunely, is how rights are presently used. Before making use of my right to appoint delegates, it is important that I start by carrying out an act of
+						sovereignty, then flesh this out in deeds, so that I may understand what I, personally, must do and what should be the parameters of the powers of my delegates. In short, I must consolidate myself before initiating anything else.
+						Institutions ought not to be created by means of the law. Instead, they ought to be the promulgators of laws. First I establish myself and then I will make laws. We ought not to lose sight of the fact that the theory of divine right, to
+						which we can be directly connected, is founded upon a supposed primacy that the government would have over the people. Our whole history, our whole legislation are founded upon this monumental nonsense: that government is a thing that
+						antedates the people, that the people is a derivation from government; that there was, or may well have been, a government around before ever any people existed. This is the established view, and the annals of the world are engraved upon
+						this aberration of the human intellect. Thus, for as long as government lasts, the principle of its authority will remain intact, divine right will persist among us and the people — whose suffrage is the equivalent of the old consecration
+						— will never, ever (and no matter how it may be called) be anything other than a subject.</p>
+
+					<p>The move from theocracy to democracy cannot ever come to pass through the exercise of electoral rights, because such exercise is specifically designed to prevent government from dying out, which is to say, to uphold and revive the
+						principle of government primacy. To move from one regime to another, there has to be a break with the mechanism of delegation that inevitably inculcates respect for the theocratic tradition. Its use must be discontinued and not resumed
+						until such time as the stable exercise of self-governance — of self-government — has been enshrined in social practice. Rationally, I can trust to my neighbour to manage some aspects of my future only after I have asserted my ownership of
+						these; if I appoint him prior to my demonstrating my entitlements, he will later refuse to acknowledge me, and he will be right.</p>
+
+					<p>But this is what I want to state: unanimity on any issue is not achievable in any country. However, given the manner in which every government is a product of the ballot-box, prevention of the emergence of a government would require
+						nothing less than unanimous abstention. Because, supposing that nine out of ten million voters were to abstain, that would still leave one million voters to install a government which the nation as a whole would be required to obey. And
+						in France there will always be at least a million individuals who will have an interest in setting up a government; which makes a nonsense of the proposition.</p>
+
+					<p>And furthermore: it need not be a million men that set up the government; a hundred thousand, ten thousand, five hundred, a hundred or even five individuals can do it and one single citizen can do it. In 1830, Lafayette, acting alone,
+						made a king of Louis Philippe;’ and over the eighteen years that followed that accession, the parliamentary authority has been formed with the involvement of a mere 200 thousand tax-payers, out of a country of 35 million souls. It does
+						not matter how narrow the numbers of citizens involved in the making of a government, for there is no diminution of its authority. But what I am concerned to demonstrate here is that no government could live without the acquiescence of
+						the bulk of the nation.</p>
+
+					<p>Philosophy, and, following that, a much more dependable teacher — experience and the facts — have demonstrated irrefutably that the real reason for the permanence of governments resides, not in material or electoral support from the
+						citizenry of a country, but rather in public belief or interest, because belief and interest are one and the same.</p>
+
+					<p>For the government we have right now, we are indebted to the electoral contests of seven or eight million, highly obedient citizens, every one which has, with every good grace, surrendered two or three days’ work in order to avail of the
+						opportunity to surrender themselves bodily and in their possessions to persons unknown to them but to whom they have pledged five five-franc coins in order to buy their friendship. Do the Legislative Assembly and Monsieur Bonaparte seem
+						to you more solidly ensconced than the Chamber of Deputies (created by a mere two hundred thousand tax-payers) was in 1847, or than Louis Philippe, the creation of just one man? Tell me: Do you think that a government established by a
+						million individuals could have been pettier, more unpopular or more confused than one into which eight million individuals have breathed life? Of course you do not think so. There is not a man here — and when I say ‘man’, I mean the
+						opposite of functionary — who has not seen his interests or beliefs deeply wounded by the regimes that have been installed, one after another, since 1848; as a result, there is not a man who should congratulate himself upon the product of
+						his vote and take the line that his abstention would have given rise to anything worse than what exists. So you are forced to acknowledge that you have squandered your time for the most wretched of outcomes. And unless you mean to carry
+						on wasting your time — which I doubt — it seems to me you must be very close to sacrificing your vote to rather more substantial realities. For the powers-that-be, your unhappiness is a very bad bet; but if they are going to need your
+						ballot paper to give them courage, they would be very weak and I doubt if they could hold onto the reins.</p>
+
+					<p>Therefore, the important thing to achieve is not unanimity in abstention, any more than unanimity of voting is required for formation of a government. Unanimity in inertia could not be an essential prerequisite for the advent of the
+						anarchic order which it is in the interest and to the credit of the French to achieve. There will always be enough functionaries, parvenus, aspirants, State rentiers and Treasury pensioners to make up the electorate. But the number of
+						Chinese willing to maintain these mandarins of power at any cost is dwindling day by day, and if there are still nineteen of them left around two years hence, let me say that it will not be through any fault of mine.</p>
+
+					<p>Then again — since we must tell the whole story — what is this that you call universal suffrage?</p>
+
+					<p>One newspaper says: We must elect Citizen Gouvernard.</p>
+
+					<p>Another objects: No, we should elect Citizen Guidane.</p>
+
+					<p>“Don’t listen to my adversary” — the former responds – “Citizen Gouvernard is the man we need. And these are the reasons why.” And so on.</p>
+
+					<p>“Pay no heed to what my rival tells you” — the second newspaper returns – “Without Citizen Guidane, nothing can be achieved. And here are the reasons why.” Etc.- At which point, after having previously remained walled up in Olympian
+						reserve, a third newspaper (the most heavyweight of them all) enters the lists and agisterially delivers its verdict: “We must elect Monsieur Gouvernard.”</p>
+
+					<p>And Monsieur Gouvernard is returned.</p>
+
+					<p>And you would have it that it is the people which make the choice?</p>
+
+					<p>That decision had as little to do with the will of the people as if power were conferred by means of a roll of the dice or drawing lots. Let this be stated by way of my settling accounts over form, without compromise to my reservations
+						with regard to substance.</p>
+
+					<p>But I know republicans, or people who pass for such, who are greatly afraid that the people, by abstaining, may encourage the renaissance of royal sovereignty. In vulgar language — which is my own language — we may say that the fear felt
+						by these republicans mirrors the affliction they would feel at their personal unelectability, since if, as the talk has it, republicans have rendered significant service, I can affirm that neither you nor I have glimpsed as much as a
+						shadow of those services in terms of cash, liberty, dignity or honour. Perhaps I am de-mystifying patriotism a tad, but what do you expect? I was not born a poet and in the mathematics of history I have discovered that, but for such
+						republicans, the monarchy would have been dead and buried sixty years ago; that but for those republicans who have done monarchy the aforementioned service of re-establishing authority every time that the people has been disposed to shove
+						it aside, we French — myself included — would long since have become free. Believe me, monarchists will not make much headway on the day that these republicans have the extreme courtesy of indulging in no more monarchism. I can assure you
+						that monarchists will be stopped dead in their tracks when we abandon the electoral field to them instead of leaving them simply as a majority.</p>
+
+					<p>What I have been saying will seem odd, right? As indeed it is; but the situation too is an odd one, and I am not one of those people who bring old solutions to new situations, like those who, over the last half century, have been
+						papering the walls of the shanties of revolutionary journalism.</p>
+
+					<h3 id="politics">To Unmask Politics is to Destroy It</h3>
+
+					<p>At the risk of repeating myself let me now pose this question: What is the voter expressing when he drops his ballot paper into the box?</p>
+
+					<p>By such an act, elector is telling candidate: I give you my freedom, unrestrictedly and unreservedly; I place at your disposal and abandon to your discretion my intellect, means of action, possessions, revenues, activity and entire
+						fortune; I surrender to you my rights of sovereignty. Similarly and by extension, I also surrender to you the rights and sovereignty of my offspring, relatives and fellow- citizens — active and passive alike. All of this I surrender to
+						you so that you may use them as you see fit. My only assurance is your whim.</p>
+
+					<p>Such is electoral control. Argue, oppose, dispute, wax poetical and sentimentalise, but you will not change a thing. Such is the deal. And it is all the same if this one is the candidate or someone else; republican or monarchist, the man
+						who has himself elected is my master and I one of his chattels; we French are all his chattels.</p>
+
+					<p>The evidence, then, is that together with its own alienation, the electorate sets the seal upon that of its neighbours. From which it follows that the vote is, on the one hand, a swindle, and, on the other, an evil, or, to put it more
+						plainly, theft.</p>
+
+					<p>If all citizens were electors and all electors were to vote, the vote would be only a universal swindle, since in that case, all would have lost out equally through the actions of each. But let just one elector abstain or be prevented
+						from so doing and theft comes into the picture. When more than three out of the nine or ten millions abstain — as has been happening — the numbers robbed represent too large a minority for this to be set aside. The old principle of
+						integrity in the powers-that-be is eroded and the decadence of the powers-that-be is in direct proportion to the erosion of that principle.</p>
+
+					<p>Suppose that half of the registered electorate abstains. Things take a serious turn for the voters and for the government established by them. Without question, the political skepticism of fully one half of the body of society will cause
+						a crisis in the unchallenged convictions of the other half And if we consider that such skepticism will be the product of a calculated, well-founded, considered indifference, and that it will be the fruit of intellect or liberty .. which
+						amount to the same thing — whereas among voters all that will be found is the herd instinct and a clinging to tradition, ignorance or self-denial — which likewise amount to the same thing — you can readily appreciate the defeat that such
+						a state of affairs will inflict upon govemmentalism. These days we may take that supposition as valid, since, if there are not yet four million abstaining electors, it is not precisely because voting is anything to feel smug about. And
+						implicit in all repentance is the acknowledgment of error.</p>
+
+					<p>Let us labour this point: let us suppose that all of the opponents of monarchy, converted to the modern precept that power cannot be honest, refrain from voting and take as the basis for their stance this unchallengeable truth: that
+						voting is at once a swindle and a theft. Automatically, the abolition of universal suffrage, by now deemed a crime in the public’s enlightened outlook, will bring about the direct and massive downfall of the monarchists, in that these
+						will no longer have any accomplices. Given that, outside of their own ranks, you will find only men who have suffered prejudice — and whose non-intervention will have a rational basis to it — the thieves will be left unmasked. Or rather,
+						for the sake of common sense, let us say that there will be no thieves any more. Because if the issue is boiled down to these hard — but simple and above all authentic — terms; if politics, stepping down from its former sham exaltation,
+						is reduced to the level of common crime — of which it has always been the hidden but real inspiration — the governmental fiction is dispelled and humankind freed of all the misunderstandings which have thus far lain behind all strife and
+						the dismal occurrences it has brought in its wake.</p>
+
+					<p>This is revolution. This is the calm, wise, rational transformation of the traditional principle! Here we have the democratic supremacy of individual over State, of interest over idea. No upset, no commotion can occur in this majestic
+						clearing of history’s cloud cover; the sun of liberty shines, with no storms in sight and, enjoying his share of the generous rays, everyone operates in the clear light of day and busies himself in discovering the place in society for
+						which his aptitudes or intelligence equip him.</p>
+
+					<p>See: In order to be free, one need only wish it, Liberty, which we have stupidly learned to expect as a gift from men, lies within and we are in liberty. For it to be attained neither rifle nor barricade nor riot, nor zealotry, nor
+						factionalism nor voting is required, since none of these is anything but licence. And as liberty is honest, it can be attained only with reserve, serenity and decency.</p>
+
+					<p>When you ask the government for freedom, the stupidity of your petition is instant proof to the latter that you have no grasp of your rights. Your petitioning is the act of a subaltern and you declare yourselves inferiors. Registering
+						its supremacy, the government capitalises upon your ignorance and conducts itself with you the way it might with blind men, for blind you are.</p>
+
+					<p>Those who plead daily with the government through their newspapers for immunities and try to peddle the view that they are undermining it and weakening it, are in reality underpinning its might and fortunes — might and fortunes which it
+						is in their interest to maintain because they hope someday to attain them with the support of the people, of a befuddled, deceived, tricked, robbed, ridiculed, swindled, subjugated, oppressed people, lashed by schemers and cretins who
+						make it stoop with their adulation, sapping its potential, bedecking it with pompous titles like some comic opera king and presenting it, to the world’s amusement, as prince of hovel and dungeon, monarch of fatigue and sovereign of
+						wretchedness.</p>
+
+					<p>For my own part, I need not idolise it; because I seek nothing from it, not even that portion of its wretchedness and disgrace that is reserved for me. But I have to ask you — you, mark you, and not the government, which I do not know,
+						nor have T any wish to know — I have to ask you for my liberty, for you have wrapped it up along with your own in order to bestow it as a gift. I ask it not as an undertaking that you must give me; in reality, if I am to be free, you too
+						must be free. Know how to be free. All that it requires is that you raise no one above you. Shun the politics that consumes peoples and devote your efforts to the wherewithal of their sustenance and enrichment. Remember that wealth and
+						liberty go together as slavery and idleness do. Turn your backs on government and on the parties which are merely its lackeys. Contempt kills governments, because only, strife can sustain them. Depose at last the sovereign who fails to
+						consult with his people and laugh at the guiles of White monarchism and Red governmentaiisnt No obstacle will be able to withstand tranquil manifestation of your needs and interests.</p>
+
+					<p>There is a Gascon legend according to which the king of Tillac forgot who he was; his steward mistreated him harshly, but when the Lady Jeanne, his wet-nurse, told them of his titles and his estate, the folk from the castle, with the
+						steward at their head, came to prostrate themselves before him.</p>
+
+					<p>Let the people demonstrate to its stewards that it will no longer deny itself; that it will have no more truck with disputes in the ante-room, and its stewards will be silenced and will adopt a respectful attitude towards it. Liberty is
+						a debt that we owe ourselves, owe to the world still waiting for it and owe to children yet unborn.</p>
+
+					<p>The new politics lies partly in the negative, in abstention and civic non-cooperation, and on the other hand, in industrial activity. In other words, it is the very negation of politics. I shall expand further upon this argument. For
+						now, suffice to say that had republicans not voted in the last general elections, there would have been no opposition in the assembly. To tell the truth, there would not even have been an assembly. There would have been only chaos between
+						the Legitimists, Orleanists and Bonapartists, who would have brought about one another’s downfall with a great scandal and by now, they would all have been felled to the amused whistling of liberty.</p>
+
+					<h3 id="conclusion">Conclusion</h3>
+
+					<p>From everything that I have said — and to which I shall be returning on another occasion, both to whatever I have forgotten and to expand upon what I have not been able to explore fully in this exposition — it follows that the political
+						vote is the framing of a government. I have shown how the framing of a government — and of the opposition which serves the former as an essential guarantee — implies consecration of an inevitable tyranny, the order of which must be sought
+						in the spontaneous surrender which the voters make of their persons and their assets — as well as of the persons and assets of the non-voters — for the benefit of those whom they elect. It follows from all of this that alienation of one’s
+						own sovereignty might not be an act of stupidity but a fully-fledged entitlement when the maker of the gift through the vote is disposing of his own morsel. However, that act ceases to be an act of stupidity or an entitlement and becomes
+						an act of theft when, having recourse to the brutal numbers game, the voter foists his sovereignty upon the sovereignty of the minorities.</p>
+
+					<p>And let me add that as every government is of necessity a source of antagonism, discord, murder and ruination, anyone helping by means of his vote to form a government is a provoker of civil strife, a promoter of crisis and, thus, a bad
+						citizen.</p>
+
+					<p>I can hear the republicans of the functionary school screeching: Treachery! They leave me cold, because I know them better than they know themselves. I have a sixty year old score to settle with them and their bankruptcy, of which I am
+						the receiver, will be no laughing matter.</p>
+
+					<p>I can also hear the monarchists and imperialists wondering if there is nothing in my harvest that might not serve as grist to their mills; they do not bother me because I have the precise measure of their old tricks.</p>
+
+					<p>The future belongs neither to the former nor to the latter. Thanks be to God! And monarchy is only waiting for dictatorship to lose its last remaining claw before it sinks its own last fang.</p>
+
+					<p>I mean to pluck them out, claw and root!</p>
+
+					<p>Watch out!</p>
+
+					<p>April 1850</p>
+
+					<p class="meta">Originally copied from <a href="https://theanarchistlibrary.org/library/anselme-bellegarrigue-the-world-s-first-anarchist-manifesto">The Anarchist Library</a></p>
+				</div>
+		</article>
+
+	</main>
+
+	<footer>
+		<div class="wrapper">
+			<p><a property="dct:title" href="https://github.com/glenn-sorrentino/the-first-anarchist-manifesto/" target="_blank" rel="cc:attributionURL noopener noreferrer">The World's First Anarchist Manifesto</a> by <a property="cc:attributionName" href="https://glennsorrentino.com/"
+					target="_blank" rel="cc:attributionURL dct:creator noopener noreferrer">Glenn Sorrentino</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY
+					4.0</a></p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

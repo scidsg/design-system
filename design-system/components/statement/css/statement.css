@@ -1,0 +1,43 @@
+@media (prefers-color-scheme: light) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+.statementContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.statement {
+  display: flex;
+  align-self: center;
+}
+
+.statement.description {
+  margin: 0;
+}
+
+.statement p {
+  font-size: var(--font-size-4);
+}
+
+@media only screen and (max-width: 960px) {
+  .statement p {
+    font-size: calc(var(--font-size-4) * .9);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .statement p {
+    font-size: calc(var(--font-size-4) * .8);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .statement p {
+    font-size: calc(var(--font-size-4) * .8);
+  }
+}
