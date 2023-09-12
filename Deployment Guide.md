@@ -2,9 +2,9 @@
 
 There are many ways to start using the design system:
 
-1. Clone the repo. Yep, that's it. Once you have the code on your computer, go to the folder and click on index.html. Drop the file into a text editor to start customizing.
-2. Fork the repo. Once you create a fork, it's yours. You can edit code directly from Github's web interface or clone it to your computer. Enable Pages in Settings and you'll have a live website ready in minutes.
-3. Deploy as an onion site on a VPS. We've included a script to deploy your site as an onion service, which is only accessible through the Tor Browser.
+1. **Clone the repo.** Yep, that's it. Once you have the code on your computer, go to the folder and click on index.html. Drop the file into a text editor to start customizing.
+2. **Fork the repo.** Once you create a fork, it's yours. You can edit code directly from Github's web interface or clone it to your computer. Enable Pages in Settings and you'll have a live website ready in minutes.
+3. **Deploy as an onion site on a VPS.** We've included a script to deploy your site as an onion service, which is only accessible through the Tor Browser.
 
 ## Deploy as an Onion site on a VPS
 
