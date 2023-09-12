@@ -6,11 +6,11 @@ This design system provides a research-based framework for quickly building dura
 
 Use it as a starter kit that you can build on top of, or as a complete, living solution.
 
-[Overview Deck](https://docs.google.com/presentation/d/1-bgrLATp5YSx1K8B7RS83IVMeEWg16Fd99Inr3_xLQk/edit?usp=sharing)
+👨‍🏫 [Overview Deck](https://docs.google.com/presentation/d/1-bgrLATp5YSx1K8B7RS83IVMeEWg16Fd99Inr3_xLQk/edit?usp=sharing)
 
-[Deployment Guide](https://github.com/scidsg/design-system/blob/main/Deployment%20Guide.md)
+👨‍💻 [Deployment Guide](https://github.com/scidsg/design-system/blob/main/Deployment%20Guide.md)
 
-[Try it out!](https://scidsg.github.io/design-system/)
+👉 [Try it out!](https://scidsg.github.io/design-system/)
 
 ![cover](https://user-images.githubusercontent.com/28545431/210019752-395c1bc0-03d9-4462-b10c-c68fc97578df.png)
 
