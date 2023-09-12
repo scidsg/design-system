@@ -19,7 +19,7 @@ There are many ways to start using the design system:
    ```
 5. Once logged in, execute the following command:
    ```
-   curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/install.sh | bash
+   curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/scripts/onion-install.sh | bash
    ```
 6. The various packages needed for proper functionality will automatically download.
 7. Once installation is complete, you'll see a message that looks like this:
