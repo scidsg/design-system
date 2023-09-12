@@ -8,7 +8,11 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 [Overview Deck](https://docs.google.com/presentation/d/1-bgrLATp5YSx1K8B7RS83IVMeEWg16Fd99Inr3_xLQk/edit?usp=sharing)
 
-https://scidsg.github.io/design-system/
+[Deployment Guide](https://github.com/scidsg/design-system/blob/main/Deployment%20Guide.md)
+
+[Try it out!](https://scidsg.github.io/design-system/)
+
+![cover](https://user-images.githubusercontent.com/28545431/210019752-395c1bc0-03d9-4462-b10c-c68fc97578df.png)
 
 ## Easy Install
 ```
@@ -16,8 +20,6 @@ curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/install.sh
 ```
 
 ![demo](https://github.com/scidsg/design-system/assets/28545431/11988e19-e300-425f-abf0-7d694cef406e)
-
-![cover](https://user-images.githubusercontent.com/28545431/210019752-395c1bc0-03d9-4462-b10c-c68fc97578df.png)
 
 ## Documentation and Resources
 
