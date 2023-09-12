@@ -21,6 +21,9 @@ There are many ways to start using the design system:
    ```
    curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/scripts/onion-install.sh | bash
    ```
+
+   ![demo](https://github.com/scidsg/design-system/assets/28545431/11988e19-e300-425f-abf0-7d694cef406e)
+
 6. The various packages needed for proper functionality will automatically download.
 7. Once installation is complete, you'll see a message that looks like this:
    ```
@@ -31,5 +34,3 @@ There are many ways to start using the design system:
 8. [Download Tor Browser](https://www.torproject.org/download/), then enter your onion address.
 
 🎉 Congratulations, you've just launched a private website powered by our design system and the Tor network!
-
-![demo](https://github.com/scidsg/design-system/assets/28545431/11988e19-e300-425f-abf0-7d694cef406e)
