@@ -14,7 +14,7 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 ![cover](https://user-images.githubusercontent.com/28545431/210019752-395c1bc0-03d9-4462-b10c-c68fc97578df.png)
 
-## Easy Install
+## Deploy as an Onion
 ```
 curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/install.sh | bash
 ```
