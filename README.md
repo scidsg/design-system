@@ -6,6 +6,11 @@
 
 https://scidsg.github.io/design-system/
 
+## Easy Install
+```
+curl -sSL https://raw.githubusercontent.com/scidsg/design-system/main/install.sh | bash
+```
+
 This design system provides a research-based framework for quickly building durable web experiences.
 
 Use it as a starter kit that you can build on top of, or as a complete, living solution.
