@@ -20,7 +20,7 @@ cat << "EOF"
      ██    ██         ██    ██    ██      ██  ██  ██ 
 ███████    ██    ███████    ██    ███████ ██      ██ 
                                                      
-Build resilent websites.
+Build resilient websites.
 
 A free resource by Science & Design - https://scidsg.org
 EOF
