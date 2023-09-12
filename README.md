@@ -32,6 +32,10 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 [axe Accessibility Testing Tool](https://www.deque.com/axe/)
 
+[For Blind Internet Users, the Fix Can Be Worse Than the Flaws, NY Times](https://www.nytimes.com/2022/07/13/technology/ai-web-accessibility.html)
+
+[7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b)
+
 ---
 
 **Code**
