@@ -1,5 +1,8 @@
 # Components
 
+🎨 [Figma Design File
+](https://www.figma.com/file/zCy3Ik1XMjN6O6q3c14P9M/Design-System-Dev-Documentation?type=design&node-id=0%3A1&mode=design&t=by5fz4OpH95oT6Kw-1)
+
 ## Wrapper
 
 The .wrapper class sets the outer boundary of section, header, and footer tags.
