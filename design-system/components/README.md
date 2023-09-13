@@ -9,4 +9,4 @@ Width of 100% with a max-width of 1280px.
 
 ## Section Markup
 
-![Frame 2](https://github.com/scidsg/design-system/assets/28545431/f44edb97-5c80-4379-bff2-405b2360b7f3)
+![Frame 2](https://github.com/scidsg/design-system/assets/28545431/95559b33-69ab-466d-ac10-99a2e97fc181)
