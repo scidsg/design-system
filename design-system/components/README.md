@@ -8,9 +8,9 @@
 The .wrapper class sets the outer boundary of section, header, and footer tags.
 Width of 100% with a max-width of 1280px.
 
-![Wrapper](https://github.com/scidsg/design-system/assets/28545431/d79807a9-151a-4ac4-a934-e0b8c8e53068)
+![Wrapper](https://github.com/scidsg/design-system/assets/28545431/19883b45-40c6-466a-a350-26052ce45059)
 
 ## Section Markup
 
-![Section Markup](https://github.com/scidsg/design-system/assets/28545431/06fcff86-2ad0-4bbf-ad6e-1919a75c423f)
+![Section Markup](https://github.com/scidsg/design-system/assets/28545431/e6e8a675-dac4-4c68-a261-838e491fbb4a)
 
