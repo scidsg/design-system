@@ -12,7 +12,15 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 👉 [Try it out!](https://scidsg.github.io/design-system/)
 
-![cover](https://user-images.githubusercontent.com/28545431/210019752-395c1bc0-03d9-4462-b10c-c68fc97578df.png)
+# Using The Design System
+
+The design system can be thought about in two layers: the visual and the interface layers. 
+
+**Interface Layer:** The components of a website or app. These are well-established, scalable patterns. 
+
+**Visual Layer:** The skin of a website or app. This layer is thematic, can change annually, seasonally, or for one-off occasions. Anything on this layer can be modified without affecting the interface layer.
+
+![Frame 92](https://github.com/scidsg/design-system/assets/28545431/f0b72a5f-fa8a-4576-8a78-c1ea1e515d9c)
 
 ## Documentation and Resources
 
