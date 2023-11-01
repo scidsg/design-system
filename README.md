@@ -16,11 +16,13 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 The design system can be thought about in two layers: the visual and the interface layers. 
 
+**Interaction Layer:** The flow for how someone completes a task.
+
 **Interface Layer:** The components of a website or app. These are well-established, scalable patterns. 
 
 **Visual Layer:** The skin of a website or app. This layer is thematic, can change annually, seasonally, or for one-off occasions. Anything on this layer can be modified without affecting the interface layer.
 
-![Frame 92](https://github.com/scidsg/design-system/assets/28545431/f0b72a5f-fa8a-4576-8a78-c1ea1e515d9c)
+![design-system-operating-layers](https://github.com/scidsg/design-system/assets/28545431/086b4df4-91a7-4074-b7a4-ed3a75802ccd)
 
 ## Documentation and Resources
 
