@@ -90,9 +90,9 @@ The design system can be thought about in two layers: the visual and the interfa
 
 **Usability**
 
-[Dark Patterns - FTC Findings](https://github.com/glenn-sorrentino/design-system/blob/main/resources/Dark%20Patterns/ftc-dark-patterns.pdf)
+[Dark Patterns - FTC Findings](https://github.com/scidsg/design-system/blob/main/resources/Dark%20Patterns/ftc-dark-patterns.pdf)
 
-[Dark Patterns - Princeton Findings](https://github.com/glenn-sorrentino/design-system/blob/main/resources/Dark%20Patterns/princeton-dark-patterns.pdf)
+[Dark Patterns - Princeton Findings](https://github.com/scidsg/design-system/blob/main/resources/Dark%20Patterns/princeton-dark-patterns.pdf)
 
 [Durability of Usability Guidelines](https://www.nngroup.com/articles/durability-of-usability-guidelines/)
 
