@@ -26,7 +26,7 @@ The design system can be thought about in two layers: the visual and the interfa
 
 ## Contribution Guidelines
 
-🙌 We're excited that you're interested in contributing to Hush Line. To maintain the quality of our codebase and ensure the best experience for everyone, we ask that you follow these guidelines:
+🙌 We're excited that you're interested in contributing to the Design System. To maintain the quality of our codebase and ensure the best experience for everyone, we ask that you follow these guidelines:
 
 ### Code of Conduct
 
