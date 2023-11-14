@@ -12,7 +12,7 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 👉 [Try it out!](https://scidsg.github.io/design-system/)
 
-# Using The Design System
+## Using The Design System
 
 The design system can be thought about in two layers: the visual and the interface layers. 
 
