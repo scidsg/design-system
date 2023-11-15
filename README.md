@@ -12,6 +12,8 @@ Use it as a starter kit that you can build on top of, or as a complete, living s
 
 👉 [Try it out!](https://scidsg.github.io/design-system/)
 
+🧰 [Page Builder](https://scidsg.github.io/design-system/page-builder/)
+
 ## Using The Design System
 
 The design system can be thought about in two layers: the visual and the interface layers. 
@@ -23,6 +25,12 @@ The design system can be thought about in two layers: the visual and the interfa
 **Visual Layer:** The skin of a website or app. This layer is thematic, can change annually, seasonally, or for one-off occasions. Anything on this layer can be modified without affecting the interface layer.
 
 ![design-system-operating-layers](https://github.com/scidsg/design-system/assets/28545431/086b4df4-91a7-4074-b7a4-ed3a75802ccd)
+
+## Page Builder
+
+Try out the [Page Builder](https://scidsg.github.io/design-system/page-builder/) - a client-side app that builds lightweight, single-file pages >99% smaller than the median page weight.
+
+![builder](https://user-images.githubusercontent.com/28545431/229338776-562c677d-2b7d-4d91-9d15-b4b34f781d61.gif)
 
 ## Contribution Guidelines
 
