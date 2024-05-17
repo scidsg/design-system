@@ -50,6 +50,14 @@
     border: 1px solid rgba(0,0,0,0.15);
 }
 
+.properties-panel input[type="radio"] {
+    width: auto;
+}
+
+.properties-panel fieldset label {
+    display: inline;
+}
+
 .properties-button {
     position: fixed;
     bottom: 0;
