@@ -1,12 +1,12 @@
 :root {
   --color-border: rgba(0,0,0,.18);
-  --color-brand: #7D25C1;
+  --color-brand: #333; /*Primary Brand Color*/
   --color-text: #333;
   --color-text-light: #595959;
-  --color-highlight: rgba(125,37,193,.1);
-  --color-brand-bg: #fbf3ff;
-  --color-bg: #FAFAFD;
-  --color-brand-gradient: linear-gradient(135deg, rgba(125,37,193,1) 0%, rgba(135,66,187,1) 100%);
+  --color-brand-bg: #FAFAFA; /*Brand Tint*/
+  --color-bg: #FAFAFA;
+  --color-brand-dark: #333; /*Headings*/
+  --color-brand-gradient: linear-gradient(135deg, rgba(71,71,71,1) 0%, rgba(91,91,91,1) 100%);
 
   --border: 1px solid var(--color-border);
   --shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.15);
@@ -630,32 +630,8 @@ a.dropbtn:hover {
   background-size: cover;
 }
 
-.icon.contact {
-  background-image: url('../img/icon-contact.png');
-}
-
-.icon.verified {
-  background-image: url('../img/icon-verified.png');
-}
-
-.icon.hardware {
-  background-image: url('../img/icon-hardware.png');
-}
-
-.icon.faq {
-  background-image: url('../img/icon-faq.png');
-}
-
-.icon.security {
-  background-image: url('../img/icon-security.png');
-}
-
-.icon.opensource {
-  background-image: url('../img/icon-opensource.png');
-}
-
-.icon.mail {
-  background-image: url('../img/icon-mail.png');
+.icon.placeholder {
+  background-image: url('../img/placeholder.png');
 }
 
 /*GLOBAL STYLES*/
@@ -768,7 +744,7 @@ section:not(.intro) {
 header.island {
   width: fit-content;
   margin: 1rem auto 0 auto;
-  border-radius: 10rem;
+  border-radius: .5rem;
   padding: .5rem .5rem .5rem 1rem;
   min-height: initial;
   outline: var(--border);
@@ -817,7 +793,7 @@ header nav .primaryBtn {
 .intro h2 {
   font-size: var(--font-size-1);
   margin-bottom: .5rem;
-  color: #370C6B;
+  color: var(--color-brand-dark);
 }
 
 .intro h2,
@@ -1162,6 +1138,11 @@ body.landing .feature .description p {
 
   .feature .flip {
     order: 0;
+  }
+
+  header h1 {
+    font-size: calc(var(--font-size-logo) * .95);
+    margin-right: 2rem;
   }
 
 }
