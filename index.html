@@ -1,297 +1,308 @@
-<!doctype html>
-
-<!-- Hey there! Thanks for taking a closer look at the code 😎
-This project is a work IN-PROGRESS! If you'd like to help make
-it better  - i.e. more accessible, align closer with
-W3C/WHATWG Standards, etc - please consider contributing 🙏 -->
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Glenn Sorrentino">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta http-equiv="onion-location" content="http://egonv4vxnya3qlycvsaxfr2vostxmwrq6omjzukzik6vvbicie6pdwyd.onion/" /> --> <!-- Use the meta tag for your onion address if your hosting provider restricts changing your server's content security headers. -->
-	<meta name="description" content="The Simple Design System is a research-based framework for creating lightweight, usable, accessible, and beautiful web experiences."> <!-- Keep the description to around 20 words or 150 characters so it displays fully on Google search results. -->
-
-	<title>Simple Design System</title>
-
-	<link rel="icon" type="image/x-icon" href="design-system/images/favicon/favicon.ico">
-	<link rel="stylesheet" href="design-system/css/style.css">
-
-	<script src="design-system/js/jquery-min.js"></script>
-	<script src="design-system/js/design-system.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Science & Design, Inc.">
+    <meta name="theme-color" content="#7D25C1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Hush Line" />
+    <meta property="og:description" content="A lightweight, secure, and anonymous tip line platform." />
+    <meta property="og:url" content="https://hushline.app" />
+    <meta property="og:image" content="https://hushline.app/design-system/images/social/social.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@scidsg">
+    <meta name="twitter:title" content="Hush Line">
+    <meta name="twitter:description" content="A lightweight, secure, and anonymous tip line platform.">
+    <meta name="twitter:image" content="https://hushline.app/design-system/images/social/social.png">
+    <title>Hush Line - A free and open-source anonymous tip-line platform.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="src/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="src/img/favicon/android-chrome-512x512.png" sizes="512x512">
+    <link rel="icon" type="image/x-icon" href="src/img/favicon/favicon.ico">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
+<body class="landing">
+    <div class="banner">
+        <p>📢 Hush Line is in open beta!</p>
+    </div>
+    <header class="island">
+        <h1>🤫 Hush Line</h1>
+        <nav>
+            <a class="mobileNav btnIcon" aria-label="Navigation menu">Menu</a>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://opencollective.com/scidsg/" target="_blank" rel="noopener noreferrer">Donate</a></li>
+                <li><a href="https://github.com/scidsg/hushline/" target="_blank" rel="noopener noreferrer">Code</a></li>
+                <li><a href="https://github.com/scidsg/hushline/tree/main/docs" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <a class="btn" href="https://beta.hushline.app/login" target="_blank" rel="noopener noreferrer">Login</a>
+            </ul>
+            <a class="btn primaryBtn" href="https://beta.hushline.app/register" target="_blank" rel="noopener noreferrer">Register</a>
+        </nav>
+    </header>
 
-<body>
-	<a href="#content" class="skiplink btn btnLrg primaryBtn">Skip to content</a>
-	<!-- <div class="banner">
-		<p>❤️ Is this resource helpful? <a href="https://opencollective.com/scidsg" target="_blank" rel="noopener noreferrer">Support our work</a>! <a href="">View component</a></p>
-		<button class="bannerBtn" aria-label="Close banner" aria-expanded="true"></button>
-	</div> -->
-	<header class="island">
-		<div class="wrapper">
-			<div class="logo">
-				<div class="logoMark"></div>
-				<h1><a href="#">Simple Design System</a></h1>
-			</div>
-			<nav>
-				<button class="mobileNav btnIcon" aria-label="Expand mobile navigation" aria-expanded="false"></button>
-				<ul>
-					<li><a class="wrapper" href="https://github.com/scidsg/design-system/blob/main/design-system/components/header" target="_blank" rel="noopener noreferrer">View Component</a></li>
-					<li><a class="wrapper" href="templates/secondary.html">Secondary Page</a></li>
-					<li><a class="wrapper" href="templates/article.html">Article</a></li>
-					<li><a class="btn btnLrg" href="templates/signin.html">Sign In</a></li>
-				</ul>
-				<a class="btn btnLrg primaryBtn" href="page-builder" target="_blank" rel="noopener noreferrer">Build Your Page</a>
-			</nav>
-		</div>
-	</header>
-
-	<main id="content">
-		<section class="intro">
-			<div class="wrapper">
-				<h2>An experience-first design&nbsp;system</h2>
-				<p>Every page of this site is built with the base components of the design system. No more wading through documentation.</p>
-				<p class="meta"><a href="https://github.com/scidsg/design-system/tree/main/design-system/components/intro" target="_blank" rel="noopener noreferrer">View component</a></p>
-			</div>
-			<p class="hint">Scroll Down</p>
-		</section>
-
-		<div class="statementContainer">
-			<div class="wrapper">
-				<div class="statement description">
-					<p>The goal of this design system is to <span class="highlight">enable anyone to quickly build and deploy great web experiences</span>. Designed with privacy in mind and optimized for Tor Browser, there's minimal javascript, PNG images, and no externally loaded resources.</p> <p class="meta"><a href="https://github.com/scidsg/design-system/tree/main/design-system/components/statement" target="_blank" rel="noopener noreferrer">View component</a></p>
-				</div>
-			</div>
-		</div>
-
-		<section id="section1">
-			<div class="wrapper">
-				<h3>Overview Section</h3>
-				<div class="group">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text.">
-						<h4>Feature Headline</h4>
-						<p>On individual components you'll see a "View Component" link. That brings you to the documentation on Github.</p>
-						<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/content-group.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-					</div>
-					<img src="design-system/images/placeholder/image.png" alt="Unless the image is decorative, add alt text 1.">
-				</div>
-				<div class="group">
-					<div class="description flip">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 2.">
-						<h4>Item With Metadata</h4>
-						<p class="meta">🏅 <a href="#" target="_blank"  rel="noopener noreferrer">Linked Metadata</a></p>
-						<p>Including metadata like author attribution, published date, or price brings relevant context forward.</p>
-					</div>
-					<img src="design-system/images/placeholder/image.png" alt="Unless the image is decorative, add alt text 3.">
-				</div>
-				<div class="group">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 4.">
-						<h4>Mobile Feature Headline</h4>
-						<p>Mobile images have a narrower width than the default layout, helping the whole image fit in the browser's vertical height.</p>
-					</div>
-					<div class="mobileImageContainer">
-						<img src="design-system/images/placeholder/mobile.png" alt="Unless the image is decorative, add alt text 5.">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="featureSection">
-			<div class="wrapper">
-				<h3>Feature Section</h3>
-				<div class="group featureGroup">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text.">
-						<h4>Feature Headline</h4>
-						<p>Feature sections place more emphasis on the content you want to highlight.</p>
-						<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/feature-section.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-					</div>
-					<img src="design-system/images/placeholder/image.png" alt="Unless the image is decorative, add alt text 1.">
-				</div>
-			</div>
-		</section>
-
-		<section id="section2">
-			<div class="wrapper">
-				<h3>Secondary Section</h3>
-				<div class="description">
-					<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 6.">
-					<h4><a href="#" target="_blank" rel="noopener noreferrer">Linked Headline</a></h4>
-					<p class="meta">Metadata</p>
-					<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-					<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/description-only.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-				</div>
-				<div class="description">
-					<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 7.">
-					<h4><a href="#" target="_blank" rel="noopener noreferrer">Linked Headline With a Button</a></h4>
-					<time class="meta" datetime="2021-12-18">December 18, 2021</time>
-					<p>"What's happened to me?" he thought. It wasn't a dream.</p>
-					<!-- Whether the Secondary button should be <a> or <button> depends on the action of the element.
-						If clicking it takes to another page or another section of the page, then it is a link.
-						If clicking it opens a modal, changes a tab, or some other UI change in the same page, then it is a button -->
-					<a class="btn smBtn" href="#" target="_blank" rel="noopener noreferrer">Secondary Button</a>
-				</div>
-				<div class="description">
-					<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 8.">
-					<h4><a href="#" target="_blank" rel="noopener noreferrer">A Longer and Super Compelling Headline for an Article</a></h4>
-					<p class="meta">By Art Vandelay</p>
-					<p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="cardSection">
-			<div class="wrapper">
-				<h3>Tertiary Section</h3>
-				<div class="groupRow card">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 9.">
-						<h4>Important Info but Lower Priority</h4>
-						<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-						<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/card-group.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-					</div>
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 10.">
-						<h4>Shorter Headlines Work Better</h4>
-						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-					</div>
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 11.">
-						<h4>Headline</h4>
-						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="cardSection">
-			<div class="wrapper">
-				<h3>Tertiary Section</h3>
-				<div class="groupRow card">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 10.">
-						<h4>Shorter Headlines Work Better</h4>
-						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-						<div class="cols">
-							<div>
-								<ul>
-									<li>List Item 1</li>
-									<li>List Item 2</li>
-									<li>List Item 3</li>
-								</ul>
-							</div>
-							<div>
-								<ul>
-									<li>List Item 4</li>
-									<li>List Item 5</li>
-									<li>List Item 6</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 10.">
-						<h4>Shorter Headlines Work Better</h4>
-						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-						<div class="cols">
-							<div>
-								<ul>
-									<li>List Item 1</li>
-									<li>List Item 2</li>
-									<li>List Item 3</li>
-								</ul>
-							</div>
-							<div>
-								<ul>
-									<li>List Item 4</li>
-									<li>List Item 5</li>
-									<li>List Item 6</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="featureSection">
-			<div class="wrapper">
-				<div class="group featureGroup">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text.">
-						<h3>Feature Section</h3>
-						<p>Feature sections place more emphasis on the content you want to highlight.</p>
-						<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/feature-section.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-						<a class="btn btnLrg primaryBtn" href="https://github.com/scidsg/design-system" target="_blank" rel="noopener noreferrer">Contribute</a>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="wrapper">
-				<h3>Tertiary Section</h3>
-				<div class="groupRow">
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 9.">
-						<h4>Important Info but Lower Priority</h4>
-						<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-						<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/content-row.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-					</div>
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 10.">
-						<h4>Shorter Headlines Work Better</h4>
-						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
-					</div>
-					<div class="description">
-						<img class="icon" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 11.">
-						<h4>Headline</h4>
-						<p>Gregor then turned to look out the window at the dull weather.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="wrapper">
-				<h3>Personal Section</h3>
-				<div class="description">
-					<img class="avatar" src="design-system/images/placeholder/circle.png" alt="Unless the image is decorative, add alt text 12.">
-					<p>Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position.</p>
-					<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/about.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact">
-			<div class="wrapper">
-				<h3 id="updatethis">Section Heading</h3>
-				<div class="description">
-					<p>However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
-					<ul aria-labelledby="updatethis">
-						<li>💻&nbsp;&nbsp;<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fglenn-sorrentino.github.io%2Fdesign-system%2F" target="_blank" rel="noopener noreferrer">HTML Validator</a></li>
-						<li>🎨&nbsp;&nbsp;<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fglenn-sorrentino.github.io%2Fdesign-system%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" rel="noopener noreferrer">CSS Validator</a></li>
-						<li>🦮&nbsp;&nbsp;<a href="https://wave.webaim.org/report#/https://glenn-sorrentino.github.io/design-system/" target="_blank" rel="noopener noreferrer">WAVE Accessibility Tool</a></li>
-					</ul>
-					<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/content/html/contact.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-				</div>
-			</div>
-		</section>
-
-	</main>
-
-	<footer>
-		<div class="wrapper">
-			<p><a property="dct:title" href="https://github.com/glenn-sorrentino/design-system" target="_blank" rel="cc:attributionURL noopener noreferrer">Simple Design System</a> by <a property="cc:attributionName" href="https://glennsorrentino.com/" target="_blank" rel="cc:attributionURL dct:creator noopener noreferrer">Glenn Sorrentino</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a></p>
-			<p class="meta"><a href="https://github.com/scidsg/design-system/blob/main/design-system/components/footer/html/footer.html" target="_blank" rel="noopener noreferrer">View Component</a></p>
-		</div>
-	</footer>
+    <main class="landing">
+        <section class="intro">
+            <div class="wrapper">
+                <p class="badge">🧪 Open Beta</p>
+                <h2>A lightweight, secure, and anonymous whistleblowing platform.</h2>
+                <p>Hush Line is the first free and open-source anonymous tipline-as-a-service for organizations and individuals.</p>
+                <a href="https://github.com/scidsg/project-info/blob/main/hush-line/9.%20Hackathon/2024/Info/2024%20Ground%20Rules.md" class="btn btnLrg" rel="noopener noreferrer" target="_blank">🏴‍☠️ Hack Hush Line</a>
+                <img src="src/img/family.png" alt="Hush Line Product Suite">
+            </div>
+        </section>
+        <section class="statement">
+            <div class="wrapper">
+                <p>One of the top reasons people fail to report their concerns is fear of retaliation. Whether you're a journalist, school administrator, or an employer, <span class="highlight">your communities want to help</span> but aren't always able to take on the associated risks.</p>
+                <p>Hush Line is a safe way for anyone to share information without jumping through hoops or compromising their identity.</p>
+            </div>
+        </section>
+        <section id="who" class="cards">
+            <h2>Who is Hush Line for?</h2>
+            <div class="wrapper">
+                    <div class="description">
+                        <img src="src/img/avatar-1.png" alt="Journalist Avatar">
+                        <h3>Journalists & Newsrooms</h3>
+                        <p>The easiest way to receive anonymous tips from the public.</p>
+                    </div>
+                    <div class="description">
+                        <img src="src/img/avatar-2.png" alt="Educator Avatar">
+                        <h3>Educators & School Administrators</h3>
+                        <p>A safe and simple tool for private student reporting.</p>
+                    </div>
+                    <div class="description">
+                        <img src="src/img/avatar-3.png" alt="Employer Avatar">
+                        <h3>Employers & Board Rooms</h3>
+                        <p>Get ahead of any behavior that could lead to compliance violations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <h2 class=wrapper>Why Hush Line?</h2>
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description">
+                        <div class="icon verified"></div>
+                        <h3>Human Verified Accounts</h3>
+                        <p>We offer verified accounts for journalists, newsrooms, public figures and activists, and organizations so you know your message is going to the right place.</p>
+                        <a class="btn" role="button" href="https://beta.hushline.app/submit_message/verify" rel="noopener noreferrer">Request Verification</a>
+                    </div>
+                    <img src="src/img/verified.png" alt="Verified Accounts Screenshot">
+                </div>
+            </div>
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description flip">
+                        <div class="icon security"></div>
+                        <h3>Strong Privacy and Security</h3>
+                        <p>From offering users two-factor and using their own PGP key to data being encrypted at rest on our server and Tor onion site support, we go beyond conventional measures to protect you and your data.</p>
+                    </div>
+                    <img src="src/img/security.png" alt="2FA and Encrypted Message Screenshot">
+                </div>
+            </div>
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description">
+                        <div class="icon opensource"></div>
+                        <h3>Free and Open Source</h3>
+                        <p>Hush Line costs nothing to use. Our software is open-source, so you can verify or contribute to the code, too!</p>
+                    </div>
+                    <img src="src/img/opensource.png" alt="Screenshot of Github">
+                </div>
+            </div>
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description flip">
+                        <div class="icon mail"></div>
+                        <h3>Mailvelope Integration</h3>
+                        <p>Bring the power of PGP to your web browser. Decrypt messages directly in the app with the Mailvelope browser extension for Firefox and Chrome!</p>
+                    </div>
+                    <img src="src/img/mailvelope.png" alt="Screenshot of Inbox with Mailvelope">
+                </div>
+            </div>
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description">
+                        <div class="icon hardware"></div>
+                        <h3>The Personal Server</h3>
+                        <p>When control over your infrastruture is critical - the Personal Server is a hardened Tor-only tip line on physical hardware in a custom-designed milled aluminum case with an e-paper display!</p>
+                        <a class="btn" role="button" href="https://shop.scidsg.org" rel="noopener noreferrer">Shop Now</a>
+                    </div>
+                    <img src="src/img/personal-server.jpg" alt="Personal Server Device">
+                </div>
+            </div>
+        </section>
+        <section id="business" class="cards">
+            <div class="wrapper">
+                    <div class="description">
+                        <img src="src/img/business.png" alt="Business Icon">
+                        <h2>Hush Line for Business</h2>
+                        <p>Are you an organization that needs your own dedicated Hush Line service? Get in touch for more information!</p>
+                        <a class="btn" role="button" href="https://beta.hushline.app/submit_message/hushline-business">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq">
+            <div class="wrapper">
+                <div class="description">
+                    <div class="icon faq"></div>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <ul class="faq-list">
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> How anonymous is Hush Line?</a></h3>
+                        <div class="faq-answer">
+                            <p>Hush Line requires no personally identifying information (PII) for tip line owners to use the service, including an email address. We scrub IP addresses and country codes from access logs and don't timestamp messages or relate account data in any way.</p>
+                            <p>We offer an Onion service for users with advanced privacy needs, which can be accessed using the <a href="https://torproject.org/download" target="_blank" rel="noopener noreferrer">Tor Browser</a>, making connections and activity completely anonymous.</p>
+                            <p>Message submitters are not required to create an account and may also choose to use our Onion service to access the app.</p>
+                            <p>The Onion address for this site is:<br><code>w25rxxn62dgix7qdbw4ot37m2y4ty7kxfrinspw4ce7jzse7pb6rhaqd.onion</code></p>
+                            <p>The Onion address for the app is:<br><code>ghj4vviaoccj4tj2r3ss52arbnchkfvs7uft4sgtrkuvdha5zjgo6yqd.onion</code></p>
+                            <p><a href="https://community.torproject.org/onion-services/overview/" target="_blank" rel="noopener noreferrer">Learn more about Onion services</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Is Hush Line end-to-end encrypted?</a></h3>
+                        <div class="faq-answer">
+                            <p>Hush Line uses <a href="https://github.com/openpgpjs/openpgpjs" target="_blank" rel="noopener noreferrer">OpenPGP.js</a> for client-side encryption, giving users who add their public PGP key end-to-end encryption for their messages. Users who disable JavaScript use server-side encryption.</p>
+                            <p>Adding your PGP key enables only you to have technical access to your decrypted messages. Neither the server administrators nor an attacker with access to the server can learn their contents. <a href="https://github.com/scidsg/hushline/blob/main/docs/1-getting-started.md" target="_blank" rel="noopener noreferrer">Setting up PGP is easy using our getting started guide</a>.</p>
+                            <p>Hush Line uses TLS encryption for data in transit, message data is stored encrypted at rest on our database, and server access is limited to relevant members of the technical staff.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Is two-way communication available?</a></h3>
+                        <div class="faq-answer">
+                            <p>If the individual submitting a message feels comfortable enough to include a contact method, they may choose to.</p>
+                            <p>For anonymous, indirect two-way communication through Hush Line, someone submitting a message may create a Hush Line account and leave the receiver their username.</p>
+                            <p>This is distinct from chatting with a known contact in your address book and returning to an ongoing message thread to jump back into a conversation. To increase your privacy, we do not relate account data in any way, meaning inter-account communication isn't technically possible.</p>
+                            <p>If having a dedicated message history is important, one solution could be for both parties to create Hush Line accounts that will only be used for that conversation. This method does not decrease privacy properties, as we do not timestamp messages, log user IPs, or relate account data.</p>
+                            <p>We strongly encourage both parties to <a href="https://github.com/scidsg/hushline/blob/main/docs/1-getting-started.md" target="_blank" rel="noopener noreferrer">upload their public PGP keys</a> if pursuing two-way communication through the platform.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png">Can I be deanonymized?</a></h3>
+                        <div class="faq-answer">
+                            <p>Neither us scrubbing IPs nor you using Tor and Signal are silver bullets, and there are many ways to deanonymize yourself. <a href="https://github.com/scidsg/project-info/blob/main/hush-line/5.%20Research/2.%20Legal/apple-v-andrew-aude.pdf" target="_blank" rel="noopener noreferrer">Take, for example, the case of Apple v. Andrew Aude</a>. He was using Signal on a work-issued phone. Even if he was using Tor in combination, if your employer can just take screenshots of your device, no amount of encryption or technology will keep you private. The lesson: never use your work-issued devices for anything you want to remain private or an employer-owned network to connect to a site you want to keep  private.</p>
+                            <p>If connecting to Hush Line using our clearnet address, attackers who can observe network connections—including your DNS or internet service providers—may be able to see your IP address and the address to which you're connecting. They *will not* be able to see which page you're on, who you're messaging, or the contents of your message.</p>
+                            <p>When thinking about blowing the whistle, always consider: What are you protecting, and who are you protecting it from? Is it a message to the local newspaper about the noisy neighborhood construction, an abusive business owner, or a corrupt local official? You can connect using our clearnet address and have confidence you'll remain anonymous.</p>
+                            <p>Or are you sharing national security secrets from within an authoritarian government that censors their internet and murders journalists? This is not legal advice, but a reasonable, though possibly prohibitively complex, way to ensure anonymity may be to somehow acquire and use a Tor-only amnesiac operating system like Tails or Qubes with a Whonix disposable VM on an uncompromised burner device where you'll encrypt your message locally before ever connecting the device to the internet. When you connect to the Hush Line Onion service, it should be on an uncompromised network you do not own, to which you are not related, and that isn't near your residence. Oh, and don't go anywhere that uses surveillance cameras or biometric identification, only use cash and don't go to an ATM near where you'll buy the device, leave your primary cell phone at home, don't check in to any location requiring your real name or ID, and if you have a car with a GPS in it, don't drive it. Reasonable, right? This might sound like a lot, but the point is that there is no one way to use Hush Line or "perfect" anonymity. You must consider your own situation uniquely. No matter what tool you use to send a message, if you share sensitive enough information about an individual or entity with enough time, money, and power, operational security will always be critically important.</p>
+                            <p>Sometimes, you can get in trouble by just being in the wrong place at the wrong time, <a href="https://www.nbcnews.com/news/us-news/google-tracked-his-bike-ride-past-burglarized-home-made-him-n1151761" target="_blank" rel="noopener noreferrer">like when this guy was arrested for riding his bike past a crime scene and became a suspect</a>. Law enforcement subpoenaed Google for information about any device in that location in a given time period, and that was enough to bring the cops to his door. This raises the question: If you're sharing information of great enough importance, should you use a computer, phone, or operating system built by a major corporation that could be subject to such subpoenas?</p>
+                            <p>Sometimes, just having software on your phone is enough to make you suspicious, <a href="https://twitter.com/olabini/status/1776585700663611868" target="_blank" rel="noopener noreferrer">like in the recent case against Ola Bini in Ecuador</a>.</p>
+                            <p>If you are considering blowing the whistle, it's always good to seek the advice of a legal professional familiar with your country's laws. If you do not have anyone you can contact locally, you may contact a firm specializing in whistleblower cases, which might be able to connect you to someone who can help.</p>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Why not just use Signal?</a></h3>
+                        <div class="faq-answer">
+                            <p>Signal is great, but it's not anonymous. For someone to send you a message, they must first:</p>
+                                <ol>
+                                    <li>Have an active phone number.</li>
+                                    <li>Sign in to an app store, requiring an email address.</li>
+                                    <li>Download Signal.</li>
+                                    <li>Register their phone number. (Yes, you still have to do this, even with usernames.)</li>
+                                    <li>Create a username.</li>
+                                    <li>Find your username or phone number.</li>
+                                    <li>Contact you.</li>
+                                </ol>
+                            <p>Signal is a perfect tool for talking to someone you know or with whom you have a baseline level of trust. It is linked to your phone, and you need a device with a phone number to start using it.</p>
+                            <p>In contrast, Hush Line works with what's already on your phone or computer. All you need is a web browser to send a message anonymously. The end-user submitting a message doesn't need to create an account, and needs no technical proficiency or prior knowledge to use the app immediately.</p>
+                            <p>Hush Line aims to be the first step for whistleblowers. When they don't know what to do first or next, a safe and effortless way to contact the right person should be the least of their worries. Once a baseline level of trust is established, other tools like Signal are more appropriate.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> How is Hush Line different from SecureDrop?</a></h3>
+                        <div class="faq-answer">
+                            <p>SecureDrop is a robust whistleblowing platform whose architecture is necessitated by very specific use cases: A.) To safely manage files sent by anonymous people so that a device or network isn't accidentally compromised, and  B.) To provide a censorship-resistant and anonymous method of sending those files. When someone submits a message, an account is created for them, allowing two-way communication. To use SecureDrop:</p>
+                            <p>The tip line owner must:</p>
+                            <ol>
+                                <li>Do A LOT. SecureDrop is an "on-prem" solution, requiring you to store multiple servers locally, all focused on isolated tasks, using a dedicated network. Think of SecureDrop as a fixed workflow for receiving and handling potentially malicious files. You must do all of the things correctly to assume safe operation. It requires a lot of time, which means a lot of money. The installation and setup of the system, in most cases, needs to be conducted by a member of the SD team, with service contracts helping to ensure proper maintenance of the infrastructure.</li>
+                            </ol>
+                            <p>The message submitter must:</p>
+                            <ol>
+                                <li>Learn how to use SecureDrop.</li>
+                                <li>Download Tor Browser.</li>
+                                <li>Find the correct Onion address for their recipient.</li>
+                                <li>Submit a message.</li>
+                                <li>Save their account credentials.</li>
+                                <li>Check back for progress.</li>
+                            </ol>
+                            <p>Hush Line is not a replacement for SecureDrop. Instead, it's for organizations who might not have the staff required to manage such a system or need nation-state levels of defense for all of their anonymous tips. We simplify <a href="https://github.com/scidsg/hushline/blob/main/docs/2-threat-model.md" target="_blank" rel="noopener noreferrer">our threat model</a> by being a text-only service, meaning there is no possibility of receiving files that could harm your computer or network.</p>
+                            <p>We're a managed service, so you don't have to worry about maintaining physical infrastructure or learning new workflows. In fact, to use Hush Line, you don't even have to log back into the service after setting it up. We can deliver messages directly to your email inbox, so you can set it, forget it, and never miss a beat. Users can add their own public PGP key, giving them end-to-end encryption and ensuring messages cannot be read by anyone but them.</p>
+                            <p>Hush Line is also available on a clearnet address, or through our Onion service. Using the browser already on your computer or phone, you can easily submit a message without ever downloading a new app. Users who need higher levels of anonymity may optionally use our Onion service, requiring them to download Tor Browser. This flexibility allows for our service to be used for benign use cases or elevated threat levels.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Why not fork SecureDrop's code?</a></h3>
+                        <div class="faq-answer">
+                            <p>While open-source, forking SecureDrop would require significant rework. Building a new solution allows us to optimize Hush Line as an easy-to-use hosted service.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Why Python?</a></h3>
+                        <div class="faq-answer">
+                            <p>We use Python and the Flask framework because they're well-documented and supported. The developer ecosystem is rich with extensions for everything from user authentication to message encryption. Python is also one of the most used languages, making the project accessible to a greater number of engineers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Why can't I receive files?</a></h3>
+                        <div class="faq-answer">
+                            <p>Receiving files comes with significant risk, and the functionality is only sometimes necessary. It can lead to compromising your device, network, and any other device connected to it.</p>
+                            <p>For the sender, acquiring and sending files is one of the riskiest things they can attempt to do. Take the case of <a href="https://www.nytimes.com/2022/12/06/opinion/reality-winner.html" target="_blank" rel="noopener noreferrer">Reality Winner</a>, who was caught because the document she shared detailing Russian interference in the US elections could be easily traced back to the originating printer, and from there, it was trivial to learn who printed it. She spent four years in prison. Or of <a href="https://www.aclu.org/news/free-speech/chelsea-manning-case-timeline" target="_blank" rel="noopener noreferrer">Chelsea Manning</a>, whose chat logs revealing war crimes led to the evidence bringing her conviction. She spent seven years in prison. Or of <a href="https://www.wired.com/2014/08/edward-snowden/" target="_blank" rel="noopener noreferrer">Edward Snowden</a>, who, even with highly technical knowledge and after using tools like Tor and Tails, shared thousands of NSA files documenting warrantless surveillance programs and more and is now exiled in Russia.</p>
+                            <p>Moreover, we challenge the need to immediately receive files by asking the question: Should you be receiving files anonymously without any baseline level of trust? If so, there are tools for that, but we don't recommend starting with them.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> How do I verify a recipient is legitimate?</a></h3>
+                        <div class="faq-answer">
+                            <p>Hush Line offers human-verified accounts for journalists, organizations, and public figures so you can ensure you're communicating with the right recipient. Do you need to <a href="https://github.com/scidsg/hushline/blob/main/docs/3-managed-service.md#verified-accounts" target="_blank" rel="noopener noreferrer">verify your account?</a> <a href="https://tips.hushline.app/submit_message/verify" target="_blank" rel="noopener noreferrer">Send us a message!</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Has Hush Line received an independent security audit?</a></h3>
+                        <div class="faq-answer">
+                            <p>Yes! In 2024 Hush Line's managed service, Personal Server, and self-hosted version have received a security audit from <a href="https://subgraph.com/" rel="noopener noreferrer" target="_blank">Subgraph</a>, sponsored by <a href="https://www.opentech.fund/" rel="noopener noreferrer" target="_blank">Open Tech Fund's</a> <a href="" rel="noopener noreferrer" target="_blank">Security Lab</a>. <a href="https://github.com/scidsg/project-info/blob/main/hush-line/1.%20Audits/Security/2024-subgraph-findings.pdf" target="_blank" rel="noopener noreferrer">View the report</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3><a href="#" class="faq-question"><img class="arrow" src="src/img/icon-chevron.png"> Where can I submit a vulnerability report?</a></h3>
+                        <div class="faq-answer">
+                            <p>See something, say something! Submit a vulnerability report if you find a security issue, and we'll address it immediately! <a href="https://tips.hushline.app/submit_message/scidsg" target="_blank" rel="noopener noreferrer">Submit a report!</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="feature">
+                <div class="wrapper">
+                    <div class="description">
+                        <div class="icon contact"></div>
+                        <h2>Contact Us</h2>
+                        <p>Thank you for stopping by! Hush Line is free and open-source product by <a href="https://scidsg.org" target="_blank" rel="noopener noreferrer">Science & Design, Inc.</a>, a 501(c)(3) non-profit in the US. Get it touch using one of the channels below! </p>
+                        <ul>
+                            <li><a href="https://beta.hushline.app/submit_message/hushline-business">Business Inquiries</a></li>
+                            <li><a href="https://fosstodon.org/@scidsg" rel="noopener noreferrer">Mastodon</a></li>
+                            <li><a href="https://www.reddit.com/r/HushLine/" rel="noopener noreferrer">Reddit</a></li>
+                            <li><a href="https://twitter.com/scidsg" rel="noopener noreferrer">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <p>Built with ✊ by <a property="cc:attributionName" href="https://scidsg.org/" target="_blank" rel="cc:attributionURL dct:creator noopener noreferrer">Science &amp; Design, Inc.</a>, a <a href="https://github.com/scidsg/business-resources/blob/main/Business%20Resources/501(c)(3)%20Determination%20Letter.pdf" target="_blank" rel="noopener noreferrer">501(c)(3)</a> non-profit located in California, USA 🇺🇸 making a global 🌍 impact.</p><p>Licensed under the <a href="https://github.com/scidsg/hushline/blob/main/LICENSE" target="_blank" rel="license noopener noreferrer">GNU AGPL License, Version 3</a>.</p>
+                <p><a href="https://github.com/scidsg/hushline/blob/main/docs/PRIVACY.md" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+                <p><a href="https://github.com/scidsg/hushline/blob/main/docs/TERMS.md" target="_blank" rel="noopener noreferrer">Terms of Service</a></p>
+            </div>
+        </footer>
+    </main>
+    <script src="src/js/nav.js"></script>
+    <script src="src/js/faq.js"></script>
 
 </body>
-
 </html>
