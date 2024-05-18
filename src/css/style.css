@@ -1,23 +1,36 @@
 :root {
-  --color-border: rgba(0,0,0,.18);
+
+  /*BRAND COLORS*/
+
   --color-brand: #333; /*Primary Brand Color*/
-  --color-text: #333;
-  --color-text-light: #595959;
   --color-brand-bg: #F1F1F1; /*Brand Tint*/
   --color-bg: #FAFAFA;
-  --color-brand-dark: #333; /*Headings*/
+  --color-brand-dark: #222; /*Headings*/
   --color-brand-gradient: linear-gradient(135deg, rgba(71,71,71,1) 0%, rgba(91,91,91,1) 100%);
+
+  /*BUTTONS AND BADGES*/
 
   --radius-round: 50vh;
   --radius-sharp: calc(var(--radius-round) * .005); /*1 = round, .0005 almost sharp*/
+  --shadow-hard: 0px 2px 0px 0px rgba(0,0,0,.15); /*Button Hover*/
+  --shadow-inset: inset 0 2px 0 rgba(0,0,0,0.15); /*Button Press*/
+
+  /*DEFAULT VARIABLES. AVOID CHANGING THESE.*/
+
+  --color-border: rgba(0,0,0,.18);
   --border: 1px solid var(--color-border);
   --shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.2);
-  --shadow-hard: 0px 2px 0px 0px rgba(0,0,0,.15);
-  --shadow-inset: inset 0 2px 0 rgba(0,0,0,0.15);
+
+  /*FONTS*/
+  /*Atkinson Hyperlegible is an accessible typeface by the Braille Institute.*/
 
   --font-mono: 'IBM Plex Mono', monospace;
   --font-sans: 'Atkinson Hyperlegible', Helvetica, Arial, sans-serif;
   --font-sans-bold: 'Atkinson Bold', Helvetica, Arial, sans-serif;
+
+  --color-text: #333;
+  --color-text-light: #595959; /*This is the lightest copy can be against a white background to remain accessible.*/
+  --text-shadow: 0px 3px 9px rgba(0, 0, 0, .5);
 
   --font-size-base: 1.125rem;
   --font-size-logo: 1.25rem;
@@ -29,6 +42,36 @@
   --font-size-3: 2rem;
   --font-size-4: 1.125rem;
 }
+
+/*For better usability, badges and buttons should have distinct shapes. If your buttons use --radius-round, badges should use --radius-sharp.*/
+
+.btn {
+    border-radius: var(--radius-sharp);
+}
+
+.badge {
+    border-radius: var(--radius-round);
+}
+
+/*Depending on the shape of your buttons, if using the island header, you may want to mirror their style.*/
+
+header.island {
+  border-radius: var(--radius-sharp);
+}
+
+/*ICONS*/
+
+.icon.placeholder {
+  background-image: url('../img/icon.svg');
+}
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/*👇 MORE OR LESS FIXED STUFF FROM HERE ON*/
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 
 @font-face {
     font-family: "Atkinson Hyperlegible";
@@ -129,7 +172,6 @@ p.badge {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: var(--radius-round);
     width: fit-content;
     font-size: var(--font-size-smallest);
     padding: .4125rem .5rem;
@@ -230,7 +272,7 @@ header {
     align-items: center;
     padding: .75rem 1.25rem;
     box-sizing: border-box;
-    border-radius: .25rem;
+    border-radius: 0;
     z-index: 9;
     min-height: 65px;
 }
@@ -312,7 +354,6 @@ button,
     min-width: 120px;
     font-size: var(--font-size-base);
     font-family: var(--font-sans-bold);
-    border-radius: var(--radius-round);
     border: 0px;
     background-color: var(--color-brand);
     color: white;
@@ -335,7 +376,6 @@ header .btn {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: var(--radius-sharp);
     font-family: var(--font-sans-bold);
     box-shadow: var(--shadow-hard);
 }
@@ -639,10 +679,6 @@ a.dropbtn:hover {
   background-size: cover;
 }
 
-.icon.placeholder {
-  background-image: url('../img/icon.svg');
-}
-
 /*GLOBAL STYLES*/
 
 body.landing {
@@ -753,7 +789,6 @@ section:not(.intro) {
 header.island {
   width: fit-content;
   margin: 1rem auto 0 auto;
-  border-radius: .5rem;
   padding: .5rem .5rem .5rem 1rem;
   min-height: initial;
   outline: var(--border);
@@ -972,13 +1007,13 @@ code {
   background-color: var(--color-brand);
   color: white;
   font-weight: normal;
-  font-family: 'Atkinson Hyperlegible', Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans);
 }
 
 /*FEATURE*/
 
 section.why {
-  background-color: #FAFAFD;
+  background-color: var(--color-bg);
 }
 
 .feature .flip + img {
@@ -1064,13 +1099,13 @@ body.landing .feature .description p {
 }
 
 #business p {
-    text-shadow: 0px .125rem .5rem rgba(0,0,0,0.4);
+    text-shadow: var(--text-shadow);
 }
 
 #business h2 {
     color: white;
     margin-bottom: 0;
-    text-shadow: 0px .125rem .5rem rgba(0,0,0,0.4);
+    text-shadow: var(--text-shadow);
 }
 
 @media only screen and (max-width: 1000px) {
