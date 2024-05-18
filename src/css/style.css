@@ -8,7 +8,7 @@
   --color-brand-dark: #333; /*Headings*/
   --color-brand-gradient: linear-gradient(135deg, rgba(71,71,71,1) 0%, rgba(91,91,91,1) 100%);
 
-  --radius-round: 50vw;
+  --radius-round: 50vh;
   --radius-sharp: calc(var(--radius-round) * .005); /*1 = round, .0005 almost sharp*/
   --border: 1px solid var(--color-border);
   --shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.2);
@@ -129,7 +129,7 @@ p.badge {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: var(--radius-sharp);
+    border-radius: var(--radius-round);
     width: fit-content;
     font-size: var(--font-size-smallest);
     padding: .4125rem .5rem;
@@ -335,7 +335,7 @@ header .btn {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: var(--radius-round);
+    border-radius: var(--radius-sharp);
     font-family: var(--font-sans-bold);
     box-shadow: var(--shadow-hard);
 }
@@ -874,23 +874,23 @@ ol, ul {
     transform: rotate(-180deg);
 }
 
-.faq-list code {
-    line-break: anywhere;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    line-height: 2.75;
-    font-size: .9125rem;
-    border-radius: .25rem;
-}
-
-.faq-list code {
-  line-break: anywhere;
-  padding: .5rem;
-  line-height: 2.75;
-  font-size: var(--font-size-small);
+code {
+  white-space: nowrap;
+  padding: .325rem .5rem;
+  line-height: 2.25;
   border: var(--border);
   font-family: var(--font-mono);
   background-color: white;
+  border-radius: var(--radius-sharp);
+  font-size: calc(var(--font-size-base) * .825);
+}
+
+.faq-list code {
+  font-size: var(--font-size-small);
+  line-break: anywhere;
+  white-space: inherit;
+  line-height: 2.75;
+  padding: .5rem;
 }
 
 .faq-list ul li,
