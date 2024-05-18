@@ -3,13 +3,17 @@
   --color-brand: #333; /*Primary Brand Color*/
   --color-text: #333;
   --color-text-light: #595959;
-  --color-brand-bg: #FAFAFA; /*Brand Tint*/
+  --color-brand-bg: #F1F1F1; /*Brand Tint*/
   --color-bg: #FAFAFA;
   --color-brand-dark: #333; /*Headings*/
   --color-brand-gradient: linear-gradient(135deg, rgba(71,71,71,1) 0%, rgba(91,91,91,1) 100%);
 
+  --radius-round: 50vw;
+  --radius-sharp: calc(var(--radius-round) * .005); /*1 = round, .0005 almost sharp*/
   --border: 1px solid var(--color-border);
-  --shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.15);
+  --shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.2);
+  --shadow-hard: 0px 2px 0px 0px rgba(0,0,0,.15);
+  --shadow-inset: inset 0 2px 0 rgba(0,0,0,0.15);
 
   --font-mono: 'IBM Plex Mono', monospace;
   --font-sans: 'Atkinson Hyperlegible', Helvetica, Arial, sans-serif;
@@ -125,7 +129,7 @@ p.badge {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: .25rem;
+    border-radius: var(--radius-sharp);
     width: fit-content;
     font-size: var(--font-size-smallest);
     padding: .4125rem .5rem;
@@ -308,7 +312,7 @@ button,
     min-width: 120px;
     font-size: var(--font-size-base);
     font-family: var(--font-sans-bold);
-    border-radius: 50vw;
+    border-radius: var(--radius-round);
     border: 0px;
     background-color: var(--color-brand);
     color: white;
@@ -331,14 +335,19 @@ header .btn {
     background-color: white;
     color: var(--color-brand);
     border: 1px solid var(--color-brand);
-    border-radius: 50vw;
+    border-radius: var(--radius-round);
     font-family: var(--font-sans-bold);
+    box-shadow: var(--shadow-hard);
 }
 
 .btn:hover {
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0px 2px 0px 0px rgba(125,37,193,.25);
+    box-shadow: none;
+}
+
+.btn:active {
+    box-shadow: var(--shadow-inset);
 }
 
 .mobileNav {
@@ -631,7 +640,7 @@ a.dropbtn:hover {
 }
 
 .icon.placeholder {
-  background-image: url('../img/placeholder.png');
+  background-image: url('../img/icon.svg');
 }
 
 /*GLOBAL STYLES*/
@@ -893,7 +902,7 @@ ol, ul {
 /*CARDS*/
 
 .cards {
-  background-color: #F1F2F8;
+  background-color: var(--color-brand-bg);
 }
 
 .cards .wrapper {
