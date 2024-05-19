@@ -40,7 +40,7 @@
   --font-size-1: 3.5rem;
   --font-size-2: 2.5rem;
   --font-size-3: 2rem;
-  --font-size-4: 1.125rem;
+  --font-size-4: 1.25rem;
 }
 
 /*For better usability, badges and buttons should have distinct shapes. If your buttons use --radius-round, badges should use --radius-sharp.*/
@@ -109,7 +109,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0 0 .5rem 0;
     font-family: var(--font-sans-bold);
     font-weight: normal;
@@ -140,6 +141,54 @@ h2+p+p {
 
 h3 {
     font-size: var(--font-size-3);
+}
+
+h4 {
+    font-size: var(--font-size-4);
+}
+
+.properties-panel {
+     position: fixed;
+     top: 1rem;
+     right: 1rem;
+     bottom: 1rem;
+     width: 300px;
+     background: #fafafa;
+     padding: 20px;
+     overflow-y: auto;
+     z-index: 9999;
+     border: var(--border);
+     border-radius: var(--radius-sharp);
+     box-shadow: var(--shadow);
+}
+
+.properties-panel h3 {
+    font-size: calc(var(--font-size-3) * .7);
+}
+
+.properties-panel h4 {
+    margin-top: 1.25rem;
+    margin-bottom: .25rem;
+}
+
+.properties-panel label {
+    display: flex;
+    font-family: var(--font-sans-bold);
+    margin: .75rem 0 .5rem 0;
+}
+
+.properties-panel input,
+.properties-panel textarea {
+    font-size: var(--font-size-small);
+    padding: .325rem .5rem;
+}
+
+.properties-panel textarea {
+    height: 100px;
+}
+
+.properties-panel button {
+    margin-bottom: 1rem;
 }
 
 h1+p.badge+p,
@@ -865,7 +914,6 @@ header nav .primaryBtn {
 
 p.badge {
   font-size: var(--font-size-smallest);
-  margin-bottom: 2rem;
 }
 
 /*FAQ*/

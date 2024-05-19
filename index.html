@@ -25,6 +25,55 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body class="landing">
+    <div class="properties-panel">
+
+        <h3>Customize Design</h3>
+        <h4>Global</h4>
+        <div>
+            <label>Brand Color</label>
+            <input type="color" id="colorBrand" value="#7D25C1">
+        </div>
+        <div>
+            <label>Brand Color - Dark</label>
+            <input type="color" id="colorBrandDark" value="#370C6B">
+        </div>
+        <div>
+            <label>Brand Background Color</label>
+            <input type="color" id="colorBrandBg" value="#fbf3ff">
+        </div>
+        <div>
+            <label>Logo</label>
+            <input type="text" id="headerText" value="The Design System">
+        </div>
+
+        <h4>Intro</h4>
+        <div>
+            <label>Intro Heading</label>
+            <input type="text" id="introHeading" value="A design system that you don't have to think about.">
+        </div>
+        <div>
+            <label>Intro Paragraph</label>
+            <textarea id="introText">All of the content on this page is placeholder information. Clone the repo, update index.html with your own images and copy, add your brand colors and iconography to src/css/style.css and turn this site into your own!</textarea>
+        </div>
+        <div>
+            <label>Intro Button</label>
+            <input type="text" id="introButton" value="Live Example Site">
+        </div>
+
+        <h4>Mission Statement</h4>
+        <div>
+            <label>First Paragraph</label>
+            <textarea id="missionText1">One of the top reasons people fail to report their concerns is fear of retaliation. Whether you're a journalist, school administrator, or an employer, your communities want to help but aren't always able to take on the associated risks.
+            </textarea>
+        </div>
+        <div>
+            <label>Second Paragraph</label>
+            <textarea id="missionText2">Hush Line is a safe way for anyone to share information without jumping through hoops or compromising their identity.</textarea>
+        </div>
+
+        <button onclick="exportSite()">Export HTML</button>
+    </div>
+
     <div class="banner">
         <p>🙏 Thank you for using The Design System!</p>
     </div>
@@ -303,6 +352,8 @@
     </main>
     <script src="src/js/nav.js"></script>
     <script src="src/js/faq.js"></script>
+    <script src="src/js/builder.js"></script>
+    <script src="src/js/jszip.js"></script>
 
 </body>
 </html>
